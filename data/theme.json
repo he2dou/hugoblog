@@ -3,9 +3,9 @@
     "default": {
       "theme_color": {
         "primary": "#121212",
-        "body": "#fff",
+        "body": "#F1F7F8",
         "border": "#eaeaea",
-        "theme_light": "#f6f6f6",
+        "theme_light": "#fff",
         "theme_dark": ""
       },
       "text_color": {
