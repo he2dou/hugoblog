@@ -12,8 +12,8 @@ url = "blog/"
 weight = 2
 
 [[main]]
-name = "组件"
-url = "elements/"
+name = "项目"
+url = "project/"
 weight = 3
 
 [[main]]
@@ -22,14 +22,16 @@ name = "联系"
 hasChildren = true
 
 [[main]]
-parent = "联系"
-name = "Contact"
-url = "contact/"
+
+[[main]]
+name = "组件"
+url = "elements/"
+weight = 5
 
 [[main]]
 parent = "联系"
-name = "Authors"
-url = "authors/"
+name = "Contact"
+url = "contact/"
 
 [[main]]
 parent = "联系"

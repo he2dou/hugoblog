@@ -1,20 +1,23 @@
 ---
-title: "centos7 升级内核的方法"
-meta_title: ""
-description: "this is meta description"
-date: 2023-04-04T05:00:00Z
-image: "/images/image-placeholder.png"
-categories: ["Application", "Data"]
-author: "John Doe"
-tags: ["nextjs", "tailwind"]
-draft: false
+title: centos 工作笔记
+date: 2022-04-04T05:00:00Z
+image: /images/image-placeholder.png
+tags:
+  - centos
 ---
 
-默认centos7的内核版本是3.10，更新前，查看内核版本
 
 <!--more-->
 
-```shell
+{{< toc >}}
+
+# 第一节 
+# centos7 升级内核的方法
+
+默认centos7的内核版本是3.10，更新前，查看内核版本
+
+
+```
 uname -r
 ```
 
@@ -45,7 +48,6 @@ rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
 在yum的ELRepo源中，有mainline（3.18.3）这个内核版本
 
 
-
 ```shell
 yum --enablerepo=elrepo-kernel install kernel-ml-devel kernel-ml -y
 ```
@@ -58,13 +60,8 @@ yum --enablerepo=elrepo-kernel install kernel-ml-devel kernel-ml -y
 reboot
 ```
 
+
 3.10.0-123.el7.x86_64 1. 2. 重要：目前内核还是默认的版本，如果在这一步完成后你就直接reboot了，重启后使用的内核版本还是默认的3.10，不会使用新的3.18，想修改启动的顺序，需要进行下一步
-
-```shell
-uname -r
-```
-
-
 
 ## 5、查看默认启动顺序
 
