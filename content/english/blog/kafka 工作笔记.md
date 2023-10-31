@@ -9,13 +9,17 @@ tags:
   - kafka
 draft: false
 ---
+Kafka 是一个开源的分布式事件流平台，被数千家公司用于高性能数据管道、流分析、数据集成和关键任务应用。
+
 <!--more-->
 
 {{< toc >}}
 
+
+
+
 ```shell
-version: '3' services: zookeeper: image: zookeeper:3.8.0 container_name: zookeeper ports: - "2181:2181" restart: always kafka1: image: wurstmeister/kafka container_name: kafka1 ports: - "9093:9092" depends_on: - zookeeper environment: KAFKA_BROKER_ID: 1 KAFKA_NUM_PARTITIONS: 3 KAFKA_DEFAULT_REPLICATION_FACTOR: 2 KAFKA_ZOOKEEPER_CONNECT: zookeeper KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092 KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://172.16.95.61:9093 KAFKA_LOG_RETENTION_HOURS: 12 KAFKA_LOG_CLEANUP_POLICY: delete KAFKA_LOG_RETENTION_CHECK_INTERVAL_MS: 300000 KAFKA_LOG_SEGMENT_BYTES: 1073741824 volumes: - /alidata/kafka/data1:/kafka - /var/run/kafka1.sock:/var/run/docker.sock restart: always kafka2: image: wurstmeister/kafka container_name: kafka2 ports: - "9094:9092" depends_on: - zookeeper environment: KAFKA_BROKER_ID: 2 KAFKA_NUM_PARTITIONS: 3 KAFKA_DEFAULT_REPLICATION_FACTOR: 2 KAFKA_ZOOKEEPER_CONNECT: zookeeper KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092 KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://172.16.95.61:9094 KAFKA_LOG_RETENTION_HOURS: 12 KAFKA_LOG_CLEANUP_POLICY: delete KAFKA_LOG_RETENTION_CHECK_INTERVAL_MS: 300000 KAFKA_LOG_SEGMENT_BYTES: 1073741824 volumes: - /alidata/kafka/data2:/kafka - /var/run/kafka2.sock:/var/run/docker.sock restart: always kafka3: image: wurstmeister/kafka container_name: kafka3 ports: - "9095:9092" depends_on: - zookeeper environment: KAFKA_BROKER_ID: 3 KAFKA_NUM_PARTITIONS: 3 KAFKA_DEFAULT_REPLICATION_FACTOR: 2 KAFKA_ZOOKEEPER_CONNECT: zookeeper KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092 KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://172.16.95.61:9095 KAFKA_LOG_RETENTION_HOURS: 12 KAFKA_LOG_CLEANUP_POLICY: delete KAFKA_LOG_RETENTION_CHECK_INTERVAL_MS: 300000 KAFKA_LOG_SEGMENT_BYTES: 1073741824 volumes: - /alidata/kafka/data3:/kafka - /var/run/kafka3.sock:/var/run/docker.sock restart: always kafka-manager: image: sheepkiller/kafka-manager:latest container_name: kafka-manager ports: - "9000:9000" # network_mode: host depends_on: - kafka1 - kafka2 - kafka3 - zookeeper environment: ZK_HOSTS: zookeeper:2181 APPLICATION_SECRET: letmein KM_ARGS: -Djava.net.preferIPv4Stack=true
-```
+
 
 内网：
 

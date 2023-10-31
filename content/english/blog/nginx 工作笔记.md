@@ -6,7 +6,10 @@ tags:
 image: /images/image-placeholder.png
 categories:
   - 技术
+author: hht
 ---
+Nginx 是一款轻量级的Web服务器、反向代理，内存占用少，启动快，高并发能力强，在互联网项目中广泛应用。
+
 <!--more-->
 
 {{< toc >}}

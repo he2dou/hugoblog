@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "9566c5d4c642574f",
+    "type": "split",
+    "children": [
+      {
+        "id": "263aadcefaac1f3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08cb06441936eb47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "centos 工作笔记.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bdb57b27fb217d45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2021年.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c5b03054a606a3ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "好用软件推荐.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c39a2e7366bd023f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "centos 工作笔记.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d8fddbf1e84a5bf4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2022年.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b2991d436bf78a33",
+    "type": "split",
+    "children": [
+      {
+        "id": "b78a7c53e759a48e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b126f5a1ad0b27c7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e359b4b66ecd6ac5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "338814e633579f31",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0644b0569ae18d29",
+    "type": "split",
+    "children": [
+      {
+        "id": "85f0ac7718b58d6d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fdd5edcfc500e465",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2021年.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "dbe765ac2b3b39f0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2021年.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "67599a085ed0de1f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e73c99b2ed684e76",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2021年.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "bdb57b27fb217d45",
+  "lastOpenFiles": [
+    "2022年.md",
+    "2023年.md",
+    "好用软件推荐.md",
+    "系统架构设计.md",
+    "centos 工作笔记.md",
+    "clickhouse 工作笔记.md",
+    "dbeaver.md",
+    "docker 工作笔记.md",
+    "docker-compose 笔记.md",
+    "git 工作笔记.md",
+    "golang 工作笔记.md",
+    "kafka 工作笔记.md",
+    "linux 工作笔记.md",
+    "mysql 工作笔记.md",
+    "nginx 工作笔记.md",
+    "python 工作笔记.md",
+    "react 学习笔记.md",
+    "redis 工作笔记.md",
+    "shell 工作笔记.md",
+    "ubuntu 工作笔记.md",
+    "windows 使用笔记.md",
+    "2021年.md"
+  ]
+}

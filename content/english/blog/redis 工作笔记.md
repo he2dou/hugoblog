@@ -8,6 +8,7 @@ categories:
 tags:
   - redis
 ---
+Redis 是一种开源（BSD 许可）内存数据结构存储，可用作数据库、缓存和消息代理。
 
 <!--more-->
 

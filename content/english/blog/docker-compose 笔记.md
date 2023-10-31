@@ -8,18 +8,19 @@ tags:
   - docker
 ---
 
-Docker Compose 是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。使用 compose，管理应用程序的各个服务，并由单个命令完成应用的创建和启动。
+Docker Compose 是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。
 
 <!--more-->
 
 {{< toc >}}
-## [](https://littleriver.cc/docker-compose#heading-httpsdocslittleriverccv1referencesdocker-composee5ae89e8a385 "Permalink")安装[​](https://docs.littleriver.cc/v1/references/docker-compose#%E5%AE%89%E8%A3%85)
+
+## 安装[​](https://docs.littleriver.cc/v1/references/docker-compose#%E5%AE%89%E8%A3%85)
 
 确保本机已经安装了docker，关于docker安装请参考链接：[https://www.cnblogs.com/xiao987334176/p/11771657.html](https://www.cnblogs.com/xiao987334176/p/11771657.html)
 
 > 参考官方链接：[https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
-### [](https://littleriver.cc/docker-compose#heading-docker-composehttpsdocslittleriverccv1referencesdocker-composee8bf90e8a18ce6ada4e591bde4bba4e4b88be8bdbddocker-composee79a84e5bd93e5898de7a8b3e5ae9ae78988e69cac "Permalink")运行此命令下载docker compose的当前稳定版本：[​](https://docs.littleriver.cc/v1/references/docker-compose#%E8%BF%90%E8%A1%8C%E6%AD%A4%E5%91%BD%E4%BB%A4%E4%B8%8B%E8%BD%BDdocker-compose%E7%9A%84%E5%BD%93%E5%89%8D%E7%A8%B3%E5%AE%9A%E7%89%88%E6%9C%AC)
+### 运行此命令下载docker compose的当前稳定版本：
 
 
 

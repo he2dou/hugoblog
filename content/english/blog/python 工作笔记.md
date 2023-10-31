@@ -8,6 +8,9 @@ categories:
 tags:
   - python
 ---
+
+Python，是一种广泛使用的解释型、高级和通用的编程语言。
+
 <!--more-->
 
 {{< toc >}}

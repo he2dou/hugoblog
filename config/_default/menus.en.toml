@@ -17,37 +17,34 @@ url = "project/"
 weight = 3
 
 [[main]]
-weight = 4
-name = "联系"
-hasChildren = true
-
-[[main]]
-
-[[main]]
 name = "组件"
 url = "elements/"
-weight = 5
-
-[[main]]
-parent = "联系"
-name = "Contact"
-url = "contact/"
-
-[[main]]
-parent = "联系"
-name = "Categories"
-url = "categories/"
-
-[[main]]
-parent = "联系"
-name = "404 Page"
-url = "404/"
+weight = 4
 
 [[main]]
 name = "关于"
 url = "about/"
 weight = 5
 
+[[main]]
+weight = 6
+name = "更多"
+hasChildren = true
+
+[[main]]
+parent = "更多"
+name = "Contact"
+url = "contact/"
+
+[[main]]
+parent = "更多"
+name = "Categories"
+url = "categories/"
+
+[[main]]
+parent = "更多"
+name = "404 Page"
+url = "404/"
 
 # footer menu
 [[footer]]

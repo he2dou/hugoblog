@@ -6,33 +6,117 @@ categories:
   - 技术
 tags:
   - linux
+author: hht
 ---
+_Linux_ 遵循GNU 通用公共许可证，个人和机构都可以使用Linux的所有底层源代码，也可以自由地修改和再发布。
+
 <!--more-->
 
 {{< toc >}}
-## CentOS
 
-## [](https://littleriver.cc/linux#heading-httpsdocslittleriverccv1referenceslinuxcentos "Permalink")[​](https://docs.littleriver.cc/v1/references/linux#centos)
+# Vim
 
-## [](https://littleriver.cc/linux#heading-ubuntuhttpsdocslittleriverccv1referenceslinuxubuntu "Permalink")Ubuntu[​](https://docs.littleriver.cc/v1/references/linux#ubuntu)
+## 查找单词并替换
 
-## [](https://littleriver.cc/linux#heading-httpsdocslittleriverccv1referenceslinuxe5b8b8e794a8e591bde4bba4 "Permalink")常用命令[​](https://docs.littleriver.cc/v1/references/linux#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)
+```shell
+:%s/old_word/new_word/g
+```
 
-### [](https://littleriver.cc/linux#heading-httpsdocslittleriverccv1referenceslinuxe69fa5e79c8be7abafe58fa3e8bf9ee68ea5e695b0 "Permalink")查看端口连接数[​](https://docs.littleriver.cc/v1/references/linux#%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%BF%9E%E6%8E%A5%E6%95%B0)
 
-COPY
+
+# Natstat
+
+netstat命令的功能是显示网络连接、路由表和网络接口的信息，可以让用户得知有哪些网络连接正在运作。在日常工作中，我们最常用的也就两个参数，即netstat –an，如下所示：
+
+1. [root@tiaobanji ~]# netstat -an  
+2. Active Internet connections (servers and established)  
+3. Proto Recv-Q Send-Q Local Address               Foreign Address             State        
+4. tcp        0      0 0.0.0.0:50020               0.0.0.0:*                   LISTEN        
+5. tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN        
+6. tcp        0      0 127.0.0.1:9000              0.0.0.0:*                   LISTEN        
+7. tcp        0      0 127.0.0.1:41224             0.0.0.0:*                   LISTEN        
+8. tcp        0      0 127.0.0.1:21224             0.0.0.0:*                   LISTEN     
+
+
+参数中stat（状态）的含义如下：
+  
+**LISTEN**：侦听来自远方的TCP端口的连接请求；  
+**SYN-SENT**：在发送连接请求后等待匹配的连接请求；  
+**SYN-RECEIVED**：在收到和发送一个连接请求后等待对方对连接请求的确认；  
+**ESTABLISHED**：代表一个打开的连接，我们常用此作为并发连接数；  
+**FIN-WAIT-1**：等待远程TCP连接中断请求，或先前的连接中断请求的确认；  
+**FIN-WAIT-2**：从远程TCP等待连接中断请求；  
+**CLOSE-WAIT**：等待从本地用户发来的连接中断请求；  
+**CLOSING**：等待远程TCP对连接中断的确认；  
+**LAST-ACK**：等待原来发向远程TCP的连接中断的确认；  
+**TIME-WAIT**：等待足够的时间以确保远程TCP连接收到中断请求的确认；  
+**CLOSED**：没有任何连接状态；
+
+## 在日常工作中用
+
+我们可以用shell组合命令来查看服务器的TCP连接状态并汇总，命令如下：  
+
+```shell
+netstat -an |grep 'ESTABLISHED' |grep 'tcp' |wc -l
+```
+
+参数说明：  
+**CLOSED**：没有连接活动或正在进行的；  
+**LISTEN**：服务器正在等待的进入呼叫；  
+**SYN_RECV**：一个连接请求已经到达，等待确认；  
+**SYN_SENT**：应用已经开始，打开一个连接；  
+**ESTABLISHED**：正常数据传输状态，也可以近似的理解为当前服务器的并发数；  
+**FIN_WAIT1**：应用已经完成；  
+**FIN_WAIT2**：另一边同意释放；  
+**ITMED_WAIT**：等待所有分组死掉；  
+**CLOSING**：两边同时尝试关闭；  
+**TIME_WAIT**：另一边已初始化一个释放；  
+**LAST_ACK**：等待所有分组死掉；  
+
+
+## 查看端口连接数
+
 
 ```shell
 netstat -nat|grep -i "80"|wc -l
 ```
 
-## [](https://littleriver.cc/linux#heading-httpsdocslittleriverccv1referenceslinuxe8bdafe4bbb6e4bdbfe794a8 "Permalink")软件使用[​](https://docs.littleriver.cc/v1/references/linux#%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8)
 
-### [](https://littleriver.cc/linux#heading-screen-httpsdocslittleriverccv1referenceslinuxscreen-e5908ee58fb0e8bf90e8a18c "Permalink")Screen 后台运行[​](https://docs.littleriver.cc/v1/references/linux#screen-%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C)
+## 其它使用方法
+
+
+```shell
+一、查看哪些IP连接本机
+
+netstat -an
+
+二、查看TCP连接数
+
+1）统计80端口连接数
+
+netstat -nat|grep -i "80"|wc -l
+
+2）统计httpd协议连接数
+
+ps -ef|grep httpd|wc -l
+
+3）统计已连接上的，状态为“established
+
+netstat -na|grep ESTABLISHED|wc -l
+
+4）查出哪个IP地址连接最多,将其封了.
+
+netstat -na|grep ESTABLISHED|awk {print $5}|awk -F: {print $1}|sort|uniq -c|sort -r +0n netstat -na|grep SYN|awk {print $5}|awk -F: {print $1}|sort|uniq -c|sort -r +0n
+
+5）centOS服务器 netstat命令 查看TCP连接数信息
+
+netstat -an |grep 'ESTABLISHED' |grep 'tcp' |wc -l
+```
+
+# Screen
 
 Linux 上Screen的使用
 
-COPY
 
 ```shell
 # 安装screen
@@ -59,128 +143,28 @@ screen -r
 
 > 参考地址： [https://blog.csdn.net/hejunqing14/article/details/50338161](https://blog.csdn.net/hejunqing14/article/details/50338161)
 
-### [](https://littleriver.cc/linux#heading-httpsdocslittleriverccv1referenceslinuxe7a381e79b98e68c82e8bdbde5b9b6e6a0bce5bc8fe58c96 "Permalink")磁盘挂载并格式化[​](https://docs.littleriver.cc/v1/references/linux#%E7%A3%81%E7%9B%98%E6%8C%82%E8%BD%BD%E5%B9%B6%E6%A0%BC%E5%BC%8F%E5%8C%96)
 
-[](http://linuxvmdatadiskautoinitialize.sh/)**[LinuxVMDataDiskAutoInitialize.sh](http://linuxvmdatadiskautoinitialize.sh/)** **文件脚本**
-
-COPY
+# SCP
 
 ```shell
-#!/bin/bash
+# 统计句柄数量 
+lsof |grep TCP|wc -l 
 
-export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
-clear
-check_lvm=`lsblk | grep -w "/" | grep lvm`
-if [ -n "${check_lvm}" ];then
-  echo -e -n "\033[31m\nThis script do not support LVM.\033[0m"
-  exit
-fi
-echo -e "\n\033[36mStep 1: Initializing script and check root privilege\033[0m"
-if [ "$(id -u)" = "0" ];then  
-    echo -e "\033[33mIs running, please wait!\033[0m"
-    yum -y install e4fsprogs > /dev/null 2>&1
-    echo -e "\033[32mSuccess, the script is ready to be installed!\033[0m"
-else
-    echo -e "\033[31mError, this script must be run as root!\n\033[0m"
-    exit 1
-fi
-echo -e "\n\033[36mStep 2: Show all active disks:\033[0m"
-fdisk -l 2>/dev/null | grep -o "Disk /dev/.*d[a-z]" | grep -v "/dev/vda"
-echo -e -n "\n\033[36mStep 3: Please choose the disk(e.g.: /dev/vdb and q to quit):\033[0m"
-read Disk
-if [ $Disk == q ];then
-    exit
-fi
-OS_mount_disk=`lsblk -nl | grep -w "/" | grep part | awk '{print $1}' | tr -d '0-9'`
-if [ -z "${OS_mount_disk}" ];then
-  echo -e -n "\033[31m\nCan not get OS_mount_disk and exit.\033[0m"
-  exit
-fi
-until fdisk -l 2>/dev/null | grep -o "Disk /dev/.*d[a-z]" | grep -v "/dev/${OS_mount_disk}" | grep -w "Disk $Disk" &>/dev/null;do
-echo -e -n "\033[31mOops, something went wrong, please try again (e.g.: /dev/vdb or q to quit):\033[0m"
-    read Disk
-    if [ $Disk == q ];then
-        exit
-    fi
-done
-while mount | grep "$Disk" > /dev/null 2>&1;do
-    echo -e "\033[31m\nYour disk has been mounted:\033[0m"
-    mount | grep "$Disk"
-    echo -e -n "\033[31m\nForce uninstalling? [y/n]:\033[0m"
-    read Umount
-    until [ $Umount == y -o $Umount == n ];do
-        echo -e -n "\033[31mOops, something went wrong, please try again [y/n]:\033[0m"
-        read Umount
-    done
-    if [ $Umount == n ];then
-        exit
-    else
-        echo -e "\033[33mIs running, please wait!\033[0m"
-        for i in `mount | grep "$Disk" | awk '{print $3}'`;do
-            fuser -km $i >/dev/null
-            umount $i >/dev/null
-            dev_name=$(cat /etc/fstab | grep "${Disk}" | awk '{ print $1 }')
-            if [ -n "$dev_name" ]; then
-                device=$(echo "${Disk}" | sed 's;/;\\\/;g')
-                [ -n "${device}" ] && sed -i -e "/^$device/d" /etc/fstab
-            else
-                UUID=$(blkid -s UUID "${Disk}1" | awk '{ print $2 }' | tr -d '"')
-                [ -n "${UUID}" ] && sed -i -e "/^${UUID}/d" /etc/fstab
-            fi
-            sleep 2
-        done
-        echo -e "\033[32mSuccess, the disk is unloaded!\033[0m"
-    fi
-    echo -e -n "\n\033[36mReady to begin to format the disk? [y/n]:\033[0m"
-    read Choice
-    until [ $Choice == y -o $Choice == n ];do
-        echo -e -n "\033[31mOops, something went wrong, please try again [y/n]:\033[0m"
-        read Choice
-    done
-    if [ $Choice == n ];then
-        exit
-    else
-        echo -e "\033[33mIs running, please wait!\033[0m"
-        dd if=/dev/zero of=$Disk bs=512 count=1 &>/dev/null
-        sleep 2
-    sync
-    fi
-    echo -e "\033[32mSuccess, the disk has been formatted!\033[0m"
-done
-echo -e "\n\033[36mStep 4: The disk is partitioning and formatting\033[0m"
-echo -e "\033[33mIs running, please wait!\033[0m"
-fdisk_mkfs() {
-fdisk -S 56 $1 << EOF
-n
-p
-1
+# 进程句柄 
+ll /proc/pid/fd 
 
+# 统计进程句柄数 
+ll /proc/pid/fd|wc -l 
 
-wq
-EOF
+# 示例 
+scp -r release mint@192.168.28.36:/home/mint 
+scp -r Config root@192.168.28.25:/usr/local/tanex.com/match
 
-sleep 2
-mkfs.ext4 ${1}1
-}
-fdisk_mkfs $Disk > /dev/null 2>&1
-echo -e "\033[32mSuccess, the disk has been partitioned and formatted!\033[0m"
-echo -e "\n\033[36mStep 5: Make a directory and mount it\033[0m"
-echo -e -n "\033[33mPlease enter a location to mount (e.g.: /mnt/data):\033[0m"
-read Mount
-mkdir -p $Mount > /dev/null 2>&1
-mount ${Disk}1 $Mount
-echo -e "\033[32mSuccess, the mount is completed!\033[0m"
-echo -e "\n\033[36mStep 6: Write configuration to /etc/fstab and mount device\033[0m"
-UUID=$(blkid -s UUID "${Disk}1" | awk '{ print $2 }' | tr -d '"')
-if [ -n "${UUID}" ]; then
-    echo "${UUID}" "${Mount}" 'ext4 defaults 0 0' >> /etc/fstab
-else
-    echo "${Disk}1" "${Mount}" 'ext4 defaults 0 0' >> /etc/fstab
-fi
-echo -e "\033[32mSuccess, the /etc/fstab is Write!\033[0m"
-echo -e "\n\033[36mStep 7: Show information about the file system on which each FILE resides\033[0m"
-df -h
-sleep 2
-echo -e "\n\033[36mStep 8: Show the write configuration to /etc/fstab\033[0m"
-cat /etc/fstab
 ```
+
+# 磁盘挂载
+
+** **文件脚本**
+
+下载地址：
+

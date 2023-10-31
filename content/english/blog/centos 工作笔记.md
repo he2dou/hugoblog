@@ -5,7 +5,7 @@ image: /images/image-placeholder.png
 tags:
   - centos
 ---
-
+CentOS是Linux发行版之一，它是来自于Red Hat Enterprise Linux依照开放源代码规定发布所编译而成。
 
 <!--more-->
 
