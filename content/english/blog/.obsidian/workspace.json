@@ -25,19 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2021年.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c5b03054a606a3ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "好用软件推荐.md",
+                "file": "docker-compose 笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,6 +37,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "docker 工作笔记.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "70e4d482572eb6b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "centos 工作笔记.md",
                 "mode": "source",
                 "source": false
@@ -56,19 +56,31 @@
             }
           },
           {
-            "id": "d8fddbf1e84a5bf4",
+            "id": "e1b7d4f1528878b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2022年.md",
+                "file": "dbeaver 数据库管理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "97e0d8f6af900a56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "系统架构设计.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2021年.md",
+                "file": "系统架构设计.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2021年.md",
+                "file": "系统架构设计.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2021年.md"
+                "file": "系统架构设计.md"
               }
             }
           }
@@ -195,29 +207,31 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bdb57b27fb217d45",
+  "active": "97e0d8f6af900a56",
   "lastOpenFiles": [
-    "2022年.md",
-    "2023年.md",
-    "好用软件推荐.md",
-    "系统架构设计.md",
+    "小孩教育问题.md",
     "centos 工作笔记.md",
+    "dbeaver 数据库管理.md",
     "clickhouse 工作笔记.md",
-    "dbeaver.md",
-    "docker 工作笔记.md",
-    "docker-compose 笔记.md",
-    "git 工作笔记.md",
-    "golang 工作笔记.md",
-    "kafka 工作笔记.md",
-    "linux 工作笔记.md",
-    "mysql 工作笔记.md",
+    "obsidian 写作应用.md",
     "nginx 工作笔记.md",
-    "python 工作笔记.md",
-    "react 学习笔记.md",
-    "redis 工作笔记.md",
-    "shell 工作笔记.md",
+    "docker 工作笔记.md",
+    "系统架构设计.md",
+    "好用软件推荐.md",
     "ubuntu 工作笔记.md",
+    "shell 工作笔记.md",
+    "redis 工作笔记.md",
+    "react 学习笔记.md",
+    "python 工作笔记.md",
+    "mysql 工作笔记.md",
+    "linux 工作笔记.md",
+    "kafka 工作笔记.md",
+    "golang 工作笔记.md",
+    "2022年.md",
+    "docker-compose 笔记.md",
     "windows 使用笔记.md",
+    "git 工作笔记.md",
+    "2023年.md",
     "2021年.md"
   ]
 }

@@ -33,7 +33,11 @@ cd /opt/kafka/bin
 
 外网：
 
-./kafka-topics.sh --create --zookeeper 172.16.95.61:2181 --replication-factor 2 --partitions 3 --topic partopic ./kafka-topics.sh --delete --zookeeper 172.16.95.61:2181 --topic partopic ./kafka-topics.sh --list --zookeeper 172.16.95.61:2181 # 查看kafka topic详情 ./kafka-topics.sh --zookeeper 172.16.95.61:2181 --topic partopic --describe # 查看消费者组列表 ./kafka-consumer-groups.sh --bootstrap-server 172.16.95.61:9093,172.16.95.61:9094,172.16.95.61:9095 --list # 查看指定消费者组详情 ./kafka-consumer-groups.sh --bootstrap-server 172.16.95.61:9093,172.16.95.61:9094,172.16.95.61:9095 --group mapbridge --describe ./kafka-console-producer.sh --broker-list 172.16.95.61:9093,172.16.95.61:9094,172.16.95.61:9095 --topic partopic ./kafka-console-consumer.sh --bootstrap-server 172.16.95.61:9093,172.16.95.61:9094,172.16.95.61:9095 --topic partopic --from-beginning
+./kafka-topics.sh --create --zookeeper 172.16.95.61:2181 --replication-factor 2 --partitions 3 --topic partopic ./kafka-topics.sh --delete --zookeeper 172.16.95.61:2181 --topic partopic ./kafka-topics.sh --list --zookeeper 172.16.95.61:2181 
+# 查看kafka topic详情 
+./kafka-topics.sh --zookeeper 172.16.95.61:2181 --topic partopic --describe 
+# 查看消费者组列表 
+./kafka-consumer-groups.sh --bootstrap-server 172.16.95.61:9093,172.16.95.61:9094,172.16.95.61:9095 --list # 查看指定消费者组详情 ./kafka-consumer-groups.sh --bootstrap-server 172.16.95.61:9093,172.16.95.61:9094,172.16.95.61:9095 --group mapbridge --describe ./kafka-console-producer.sh --broker-list 172.16.95.61:9093,172.16.95.61:9094,172.16.95.61:9095 --topic partopic ./kafka-console-consumer.sh --bootstrap-server 172.16.95.61:9093,172.16.95.61:9094,172.16.95.61:9095 --topic partopic --from-beginning
 
 线上查看消费情况
 

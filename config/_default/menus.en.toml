@@ -46,18 +46,23 @@ parent = "更多"
 name = "404 Page"
 url = "404/"
 
+[[main]]
+parent = "更多"
+name = "Policy"
+url = "privacy-policy/"
+
 # footer menu
 [[footer]]
-name = "关于"
+name = "友链1"
 url = "about/"
 weight = 1
 
 [[footer]]
-name = "组件"
-url = "elements/"
+name = "齐实呀"
+url = "https://qishiya.com/"
 weight = 2
 
 [[footer]]
-name = "Privacy Policy"
+name = "友链3"
 url = "privacy-policy/"
 weight = 3

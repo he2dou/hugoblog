@@ -94,16 +94,27 @@ docker version
 ```
 
 
-解决普通用户权限问题
+ **创建docker用户组, 应用用户加入docker组**
+
 
 
 ```shell
-sudo groupadd docker     #添加docker用户组
-sudo gpasswd -a $USER docker     #将登陆用户加入到docker用户组中
-newgrp docker     #更新用户组
-sudo systemctl restart docker   # 重启docker
-docker ps    #测试docker命令是否可以使用sudo正常使用
+1. 创建docker用户组
+
+sudo groupadd docker
+
+2. 应用用户加入docker用户组
+
+sudo usermod -aG docker ${USER}
+
+3. 重启docker服务
+
+sudo systemctl restart docker
+
+4. 重新打开终端才可生效登入
 ```
+
+
 
 ## 日志查询
 
