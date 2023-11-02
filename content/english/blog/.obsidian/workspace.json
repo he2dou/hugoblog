@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "系统架构设计.md",
+                "file": "小孩教育问题.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "系统架构设计.md",
+                "file": "小孩教育问题.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "系统架构设计.md",
+                "file": "小孩教育问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "系统架构设计.md"
+                "file": "小孩教育问题.md"
               }
             }
           }
@@ -209,22 +209,22 @@
   },
   "active": "97e0d8f6af900a56",
   "lastOpenFiles": [
+    "linux 工作笔记.md",
     "小孩教育问题.md",
+    "好用软件推荐.md",
+    "系统架构设计.md",
     "centos 工作笔记.md",
     "dbeaver 数据库管理.md",
     "clickhouse 工作笔记.md",
     "obsidian 写作应用.md",
     "nginx 工作笔记.md",
     "docker 工作笔记.md",
-    "系统架构设计.md",
-    "好用软件推荐.md",
     "ubuntu 工作笔记.md",
     "shell 工作笔记.md",
     "redis 工作笔记.md",
     "react 学习笔记.md",
     "python 工作笔记.md",
     "mysql 工作笔记.md",
-    "linux 工作笔记.md",
     "kafka 工作笔记.md",
     "golang 工作笔记.md",
     "2022年.md",

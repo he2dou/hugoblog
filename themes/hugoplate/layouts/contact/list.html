@@ -60,7 +60,7 @@
     {{ end }}
   {{ end }}
 
-  {{ with site.Params.subscription }}
+  {{/*  {{ with site.Params.subscription }}
     {{ if .enable }}
       <!-- subscription form -->
       <form
@@ -109,7 +109,7 @@
         src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
       <!-- /subscription form -->
     {{ end }}
-  {{ end }}
+  {{ end }}  */}}
 
   {{ if site.Params.google_map.enable }}
     {{ $gmap:= resources.Get "plugins/maps/google-map.js" }}
