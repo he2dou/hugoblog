@@ -53,16 +53,26 @@ url = "privacy-policy/"
 
 # footer menu
 [[footer]]
-name = "友链1"
-url = "about/"
+name = "qishiya"
+url = "https://qishiya.com/"
 weight = 1
 
 [[footer]]
-name = "齐实呀"
-url = "https://qishiya.com/"
+name = "newbing"
+url = "https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx"
 weight = 2
 
 [[footer]]
-name = "友链3"
-url = "privacy-policy/"
+name = "bard"
+url = "https://bard.google.com/"
 weight = 3
+
+[[footer]]
+name = "openai"
+url = "https://chat.openai.com/"
+weight = 4
+
+[[footer]]
+name = "yiyan"
+url = "https://yiyan.baidu.com/"
+weight = 5

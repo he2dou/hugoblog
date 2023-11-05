@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小孩教育问题.md",
+                "file": "2023年.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "小孩教育问题.md",
+                "file": "2023年.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "小孩教育问题.md",
+                "file": "2023年.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "小孩教育问题.md"
+                "file": "2023年.md"
               }
             }
           }
@@ -209,13 +209,16 @@
   },
   "active": "97e0d8f6af900a56",
   "lastOpenFiles": [
-    "linux 工作笔记.md",
+    "2021年.md",
+    "2022年.md",
+    "2023年.md",
+    "clickhouse 工作笔记.md",
+    "centos 工作笔记.md",
     "小孩教育问题.md",
+    "linux 工作笔记.md",
     "好用软件推荐.md",
     "系统架构设计.md",
-    "centos 工作笔记.md",
     "dbeaver 数据库管理.md",
-    "clickhouse 工作笔记.md",
     "obsidian 写作应用.md",
     "nginx 工作笔记.md",
     "docker 工作笔记.md",
@@ -227,11 +230,8 @@
     "mysql 工作笔记.md",
     "kafka 工作笔记.md",
     "golang 工作笔记.md",
-    "2022年.md",
     "docker-compose 笔记.md",
     "windows 使用笔记.md",
-    "git 工作笔记.md",
-    "2023年.md",
-    "2021年.md"
+    "git 工作笔记.md"
   ]
 }
