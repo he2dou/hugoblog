@@ -1,5 +1,5 @@
 ---
-title: "Elements"
+title: "Awesome"
 # meta title
 meta_title: ""
 # meta description
@@ -44,29 +44,17 @@ Strike through uses two tildes. ~~Scratch this.~~
 
 <hr>
 
-### Link
+### 链接
 
-[I'm an inline-style link](https://www.google.com)
+开发一个强大、可扩展和高效的系统可能令人生畏。但是，了解关键概念和组件可以使该过程更易于管理。
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+- [一键清除背景](https://www.remove.bg/zh/upload)
+- [logo生成工具](https://www.logosc.cn/make)
+- [调整图片大小](https://www.iloveimg.com/zh-cn/resize-image)
+- [智能抠图软件](https://segment-anything.com/)
+- [静态博客主题](https://github.com/zeon-studio/hugoplate)
+- [个税计算工具](https://www.taxspirit.com/)
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links.
-<http://www.example.com> or <http://www.example.com> and sometimes
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.themefisher.com
-[1]: https://gethugothemes.com
-[link text itself]: https://www.getjekyllthemes.com
 
 <hr>
 

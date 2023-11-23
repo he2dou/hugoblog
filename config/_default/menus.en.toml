@@ -17,8 +17,8 @@ url = "project/"
 weight = 3
 
 [[main]]
-name = "组件"
-url = "elements/"
+name = "很赞"
+url = "awesome/"
 weight = 4
 
 [[main]]

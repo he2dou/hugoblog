@@ -108,6 +108,7 @@
                         </div>
                         <blockquote class="mt-8">
                           {{ .content | markdownify }}
+                         
                         </blockquote>
                         <div class="mt-11 flex items-center">
                           <div class="text-dark dark:text-white">
@@ -120,6 +121,12 @@
                             <p class="text-dark dark:text-white">
                               {{ .designation | markdownify }}
                             </p>
+                          </div>
+                          <div class="ml-5">
+                            <a class="h5 font-primary font-semibold" href="{{ .link | absURL }}">
+                              {{ .label }}
+                              <i class="fa fa-arrow-right pl-2"></i>
+                            </a>
                           </div>
                         </div>
                       </div>

@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023年.md",
+                "file": "2022年.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023年.md",
+                "file": "2022年.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023年.md",
+                "file": "2022年.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023年.md"
+                "file": "2022年.md"
               }
             }
           }
@@ -209,9 +209,9 @@
   },
   "active": "97e0d8f6af900a56",
   "lastOpenFiles": [
+    "2023年.md",
     "2021年.md",
     "2022年.md",
-    "2023年.md",
     "clickhouse 工作笔记.md",
     "centos 工作笔记.md",
     "小孩教育问题.md",
