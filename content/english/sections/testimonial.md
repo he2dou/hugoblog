@@ -1,39 +1,28 @@
 ---
 enable: true
-title: "代码是真理。"
+title: "代码之美。"
 description: "相较于文档或注释，代码是最真实、最可靠的信息来源。保持代码清晰和自描述性。"
 
 # Testimonials
 testimonials:
-  - name: "2024年"
-    designation: "计划和总结"
+  - name: "小孩教育问题"
+    designation: "2023-04-04"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
-    link: "/project"
+    content: "在小孩的教育问题上，培养学习兴趣、训练学习方法、树立学习目标是非常重要的。"
+    link: "/blog/小孩教育问题/"
 
-  - name: "2023年"
-    designation: "计划和总结"
+  - name: "系统架构设计"
+    designation: "2023-05-04"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
-    link: "/project"
+    content: "开发一个强大、可扩展和高效的系统, 了解关键概念和组件可以使该过程更易于管理。"
+    link: "/blog/系统架构设计/"
 
-  - name: "2022年"
-    designation: "计划和总结"
+  - name: "自由职业思考"
+    designation: "2023-11-04"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
-    link: "/project"
+    content: "自由职业是指个体选择不依赖于传统雇佣关系，而是通过提供独立服务、项目或产品来获取收入。"
+    link: "/blog/自由职业思考/"
 
-  - name: "2021年"
-    designation: "计划和总结"
-    avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
-    link: "/project"
-
-  - name: "2020年"
-    designation: "计划和总结"
-    avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
-    link: "/project"
 
 # don't create a separate page
 _build:
