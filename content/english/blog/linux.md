@@ -113,35 +113,6 @@ netstat -na|grep ESTABLISHED|awk {print $5}|awk -F: {print $1}|sort|uniq -c|sort
 netstat -an |grep 'ESTABLISHED' |grep 'tcp' |wc -l
 ```
 
-# Screen
-
-Linux 上Screen的使用
-
-
-```shell
-# 安装screen
-sudo yum install -y screen
-
-#进入工程目录
-cd /alidata/redis-shake-v2.0.3
-
-# 新建窗口
-screen -S redis-shake
-
-# 执行命令
-screen ./redis-shake.linux -conf=redis-shake.conf -type=sync
-
-#分离会话
-ctrl+a
-
-#列出screen
-screen -ls
-
-#进入screen
-screen -r
-```
-
-> 参考地址： [https://blog.csdn.net/hejunqing14/article/details/50338161](https://blog.csdn.net/hejunqing14/article/details/50338161)
 
 
 # SCP

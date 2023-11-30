@@ -1,5 +1,5 @@
 ---
-title: git 工作笔记
+title: git 笔记
 date: 2022-04-04T05:00:00Z
 image: /images/image-placeholder.png
 categories:

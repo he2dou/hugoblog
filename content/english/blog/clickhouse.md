@@ -1,5 +1,5 @@
 ---
-title: clickhouse 工作笔记
+title: clickhouse 笔记
 date: 2023-04-04T05:00:00Z
 image: /images/image-placeholder.png
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "Awesome"
+title: "Video"
 # meta title
 meta_title: ""
 # meta description

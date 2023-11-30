@@ -67,3 +67,19 @@ keys *
 ## [](https://littleriver.cc/redis#heading-httpsdocslittleriverccv1referencesredise99984e5bd95 "Permalink")附录[​](https://docs.littleriver.cc/v1/references/redis#%E9%99%84%E5%BD%95)
 
 ### [](https://littleriver.cc/redis#heading-5a6i5oi356uv6l2v5lu25o6o6i2q "Permalink")客户端软件推荐
+
+
+## 使用python批量删除key
+
+```python
+import redis
+
+r = redis.Redis(host='127.0.0.1', port=6379, password='123456', db=0)
+
+for key in r.scan_iter(match='cacheKey:*'):
+    print(key)
+    r.delete(key)
+    #if r.ttl(key) < 14400:
+    #    print('----del----', key)
+    #    r.delete(key)
+```

@@ -24,7 +24,7 @@ features:
     button:
       enable: false
       label: "Get Started Now"
-      link: "/awesome"
+      link: "/video"
 
   - title: "不需要它。"
     image: "/images/service-2.png"
