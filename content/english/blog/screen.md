@@ -1,13 +1,15 @@
 ---
 title: screen 窗口管理器
 date: 2023-11-27T05:00:00Z
-image: /images/image-placeholder.png
 categories:
   - 技术
 tags:
   - screen
 author: harry
 ---
+
+<img src="https://i.imgur.com/IqbwNKN.jpg" alt="免费图床网站">
+
 Linux Screen是一个全屏窗口管理器，它可以创建多个窗口，并在其间进行切换。
 
 <!--more-->
