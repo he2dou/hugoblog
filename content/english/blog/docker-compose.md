@@ -1,12 +1,13 @@
 ---
 title: docker-compose 工作笔记
 date: 2022-04-04T05:00:00Z
-image: /images/image-placeholder.png
 categories:
   - 技术
 tags:
   - docker
 ---
+
+<img src="https://i.imgur.com/SZ0I0KW.jpg" title="source: imgur.com" />
 
 Docker Compose 是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。
 

@@ -1,7 +1,7 @@
 ---
 title: dbeaver 数据库管理
 date: 2023-10-31T05:00:00Z
-image: /images/image-placeholder.png
+# image: /images/image-placeholder.png
 author: hht
 categories:
   - 工具
@@ -9,6 +9,9 @@ tags:
   - dbeaver
 draft: false
 ---
+
+<img src="https://s2.loli.net/2023/12/01/pBEa9XZKRNUbT18.jpg" />
+
 DBeaver  是一款免费的跨平台数据库工具，适用于开发人员、数据库管理员、以及所有从事数据工作的人员。
 
 <!--more-->
