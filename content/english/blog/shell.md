@@ -1,12 +1,14 @@
 ---
 title: shell 工作笔记
 date: 2022-04-04T05:00:00Z
-image: /images/image-placeholder.png
 categories:
   - 技术
 tags:
   - shell
 ---
+
+<img src="https://i.imgur.com/Sdjnacf.jpg" />
+
 Shell是一个用C 语言编写的程序，它是用户使用Linux 的桥梁。_Shell_ 既是一种命令语言，又是一种程序设计语言。
 
 
@@ -21,9 +23,8 @@ Shell是一个用C 语言编写的程序，它是用户使用Linux 的桥梁。_
 
 脚本名称：read_[text.sh](http://text.sh/)
 
-COPY
 
-```
+```sh
 #!/bin/bash
 
 # 检查参数
@@ -48,7 +49,7 @@ done < $1
 
 
 
-```
+```sh
 chmod +x read_text.sh
 ```
 
@@ -56,7 +57,7 @@ chmod +x read_text.sh
 
 
 
-```
+```sh
 ./read_text.sh filename
 ```
 
@@ -66,7 +67,7 @@ chmod +x read_text.sh
 
 
 
-```
+```sh
 #!/bin/bash
 
 # 检查参数
@@ -92,7 +93,7 @@ done < $1
 
 
 
-```
+```sh
 chmod +x test.sh
 ```
 
@@ -100,7 +101,7 @@ chmod +x test.sh
 
 
 
-```
+```sh
 table1
 table2
 ```
@@ -109,6 +110,6 @@ table2
 
 
 
-```
+```sh
 ./test.sh a.txt
 ```

@@ -1,5 +1,5 @@
 ---
-title: centos 笔记
+title: centos 服务器系统
 date: 2022-04-04T05:00:00Z
 image: /images/image-placeholder.png
 tags:

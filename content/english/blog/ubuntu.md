@@ -1,5 +1,5 @@
 ---
-title: ubuntu 工作笔记
+title: ubuntu 桌面操作系统
 date: 2023-10-31T05:00:00Z
 author: hht
 categories:
