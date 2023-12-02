@@ -1,5 +1,5 @@
 ---
-title: docker 工作笔记
+title: docker 虚拟化技术
 date: 2023-10-30T05:00:00Z
 tags:
   - docker
@@ -19,7 +19,6 @@ author: hht
 <!--more-->
 
 {{< toc >}}
-# 第一节 环境安装
 
 
 Docker 要求 CentOS 系统的内核版本高于 3.10 ，查看本页面的前提条件来验证你的CentOS 版本是否支持 Docker
@@ -124,7 +123,6 @@ sudo systemctl restart docker
 ### 查询docker日志，最后100行
 
 
-
 ```shell
 docker logs -f draining_admin --tail 100
 ```
@@ -133,11 +131,20 @@ docker logs -f draining_admin --tail 100
 
 
 
-```shell
-docker ps // 查看所有正在运行容器 
-docker stop containerId // containerId 是容器的ID 
+```sh
+# 查看所有正在运行容器 
+docker ps 
+
+# 停止容器
+docker stop containerId
+
 docker ps -a // 查看所有容器 
+
 docker ps -a -q // 查看所有容器ID
+
+# 进入mysql容器内部
+docker exec -it mysql bash
+
 ```
 
 ### 删除镜像
@@ -145,12 +152,19 @@ docker ps -a -q // 查看所有容器ID
 
 
 ```shell
+
 # 指定image
 docker rmi image
+
 # 所有的
 docker rmi $(docker images -q) 
+
 # 删除为none的镜像
 docker rmi $(docker images -f "dangling=true" -q)
+
+# 删除指定名称的所有容器
+docker rmi -f $(docker images  |  grep "registry.cn*"  | awk '{print $3}')
+
 ```
 
 ### 关闭容器
@@ -164,8 +178,7 @@ docker stop image
 # 所有的
 docker stop $(docker ps -a -q)
 
-# 删除指定名称的所有容器
-docker rmi -f $(docker images  |  grep "registry.cn*"  | awk '{print $3}')
+
 ```
 
 ### 启动容器
@@ -201,7 +214,7 @@ docker build -t bifrost .
 
 
 ```shell
-docker run --name=mapbridge_sync -d  -p 21036:21036 -v /docker/mapbridge_sync/etc:/src/mapbridge_sync/etc  bifrost
+docker run --name=[name] -d  -p 21036:21036 -v /docker/mapbridge_sync/etc:/src/mapbridge_sync/etc  bifrost
 ```
 
 ### 空间清理
@@ -215,6 +228,9 @@ docker system df
 docker rmi $(docker images | grep "^" | awk "{print $3}")
 
 # 删除所有dangling数据卷（即无用的Volume）：
-```shell
 docker volume rm $(docker volume ls -qf dangling=true)
-````
+
+# 删除容器内的临时文件
+docker exec [name] sh -c "rm -rf /tmp/* /var/tmp/*"
+
+```

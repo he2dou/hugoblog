@@ -14,3 +14,11 @@ draft: false
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. 
 
 <!--more-->
+
+### 使用bing ai 服务
+
+
+### 创建自己的提示词
+
+
+### 对图片进行调整

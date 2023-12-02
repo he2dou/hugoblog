@@ -14,11 +14,16 @@ Linux Screen是一个全屏窗口管理器，它可以创建多个窗口，并�
 
 <!--more-->
 
+### 1. 安装screen
 
-```shell
-# 安装screen
+```sh
 sudo yum install -y screen
+```
 
+
+### 2. 常用命令
+
+```sh
 # 进入工程目录
 cd /alidata/redis-shake-v2.0.3
 

@@ -18,6 +18,9 @@ Dolphinscheduler 是一种开源的、分布式的、易于使用的大数据工
 
 ## 下载安装环境
 
+- 服务器系统版本：CentOS Linux release 7.9.2009 (Core)
+- dolphinscheduler：3.1.4
+
 ### 1.安装 jdk-20_linux-x64_bin
 
 ```sh
@@ -119,9 +122,9 @@ tail -f dolphinscheduler-standalone.log
 
 ## 软件使用说明
 
-- 软件端口开放：12345
+- 软件端口开放：**12345**
 
-- 默认用户名密码：admin/dolphinscheduler123
+- 默认用户名和密码：**admin/dolphinscheduler123**   （记得安装完成之后修改默认密码）
 
 - 系统需要配置
   - 建立项目：项目管理- 创建项目
