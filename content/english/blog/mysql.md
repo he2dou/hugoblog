@@ -1,12 +1,14 @@
 ---
-title: mysql 工作笔记
+title: mysql 数据库服务
 date: 2022-04-04T05:00:00Z
-image: /images/image-placeholder.png
 categories:
   - 技术
 tags:
   - mysql
 ---
+
+<img src="https://i.imgur.com/wHuvdOq.jpg" />
+
 MySQL数据库服务是一个完全托管的数据库服务，可使用世界上最受欢迎的开源数据库来部署云原生应用程序。
 
 <!--more-->

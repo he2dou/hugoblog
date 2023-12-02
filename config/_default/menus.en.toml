@@ -76,3 +76,8 @@ weight = 4
 name = "yiyan"
 url = "https://yiyan.baidu.com/"
 weight = 5
+
+[[footer]]
+name = "deepl"
+url = "https://www.deepl.com/"
+weight = 6

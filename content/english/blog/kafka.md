@@ -1,14 +1,16 @@
 ---
 title: kafka 工作笔记
 date: 2022-04-04T05:00:00Z
-image: /images/image-placeholder.png
 categories:
   - 技术
-author: John Doe
+author: harry
 tags:
   - kafka
 draft: false
 ---
+
+<img src="https://i.imgur.com/8wntpZz.jpg" />
+
 Kafka 是一个开源的分布式事件流平台，被数千家公司用于高性能数据管道、流分析、数据集成和关键任务应用。
 
 <!--more-->

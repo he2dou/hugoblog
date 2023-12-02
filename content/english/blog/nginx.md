@@ -1,13 +1,15 @@
 ---
-title: nginx 工作笔记
+title: nginx 轻量级Web服务器
 date: 2023-04-04T05:00:00Z
 tags:
   - nginx
-image: /images/image-placeholder.png
 categories:
   - 技术
-author: hht
+author: harry
 ---
+
+<img src="https://i.imgur.com/2l4Lxk7.jpg" />
+
 Nginx 是一款轻量级的Web服务器、反向代理，内存占用少，启动快，高并发能力强，在互联网项目中广泛应用。
 
 <!--more-->

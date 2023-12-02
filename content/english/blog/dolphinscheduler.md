@@ -1,10 +1,8 @@
 ---
 title: Dolphinscheduler 工作流调度
 date: 2023-12-02T05:00:00Z
-tags:
-  - tool
 categories:
-  - 技术
+  - 工具
 author: harry
 ---
 

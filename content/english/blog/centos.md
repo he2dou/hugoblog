@@ -1,10 +1,13 @@
 ---
 title: centos 服务器系统
 date: 2022-04-04T05:00:00Z
-image: /images/image-placeholder.png
-tags:
-  - centos
+author: harry
+categories:
+  - 技术
 ---
+
+<img src="https://i.imgur.com/I4Y3Qkw.jpg" />
+
 CentOS是Linux发行版之一，它是来自于Red Hat Enterprise Linux依照开放源代码规定发布所编译而成。
 
 <!--more-->
@@ -106,3 +109,8 @@ uname -r
 ```
 
 `3.18.3-1.el7.elrepo.x86_64 1. 2.` 完成后内核已经是最新的了。
+
+
+## 基础软件安装
+
+yum install -y lrzsz

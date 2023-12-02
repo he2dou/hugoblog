@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "自动化一切。通过自动化减少手动工作，提高效率，减少错误。"
-  content: "不要重复自己。避免在代码中重复相同的逻辑或功能，而是尽量使用函数、模块或类来封装和复用代码。"
+  title: "自动化一切。减少手动工作，提高效率，避免错误。"
+  content: "Automate everything. Reduce manual work, increase efficiency and avoid mistakes."
   image: "/images/banner.png"
   button:
     enable: true

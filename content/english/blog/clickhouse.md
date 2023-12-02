@@ -1,13 +1,15 @@
 ---
-title: clickhouse 笔记
+title: clickhouse 高效的列式数据库
 date: 2023-04-04T05:00:00Z
-image: /images/image-placeholder.png
 tags:
   - clickhouse
-author: hht
+author: harry
 categories:
   - 技术
 ---
+
+<img src="https://i.imgur.com/EzLlzhE.jpg" />
+
 ClickHouse 是用于实时应用程序和分析的速度最快、资源效率最高的开源数据库。
 
 <!--more-->
@@ -82,4 +84,57 @@ select query from system.query_log where event_time>'2023-04-28 10:00:00' and ev
 
 ```sql
 SELECT partition, name, rows, active FROM system.parts WHERE table = 'mb_material' AND database = 'mapbridge_ck';
+```
+
+### 批量执行clickhouse数据同步
+
+脚本文件：[test.sh](http://test.sh/)
+
+
+
+```sh
+#!/bin/bash
+
+# 检查参数
+if [ $# -ne 1 ]; then
+  echo "用法：$0 filename"
+  exit 1
+fi
+
+# 判断文件是否存在
+if [ ! -f $1 ]; then
+  echo "文件不存在！"
+  exit 1
+fi
+
+# 读取文件并打印每行内容
+while read table; do
+  echo "$table"
+  clickhouse-client --host ip --port 9000 --query="insert into database.$table  SELECT * FROM  remote('xxx.com:9000', 'database', $table, 'user', 'password')"
+done < $1
+```
+
+赋予权限
+
+
+
+```sh
+chmod +x test.sh
+```
+
+测试文本: a.txt
+
+
+
+```sh
+table1
+table2
+```
+
+执行脚本
+
+
+
+```sh
+./test.sh a.txt
 ```

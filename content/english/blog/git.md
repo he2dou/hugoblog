@@ -1,14 +1,15 @@
 ---
-title: git 笔记
+title: git 版本控制系统
 date: 2022-04-04T05:00:00Z
-image: /images/image-placeholder.png
 categories:
   - 技术
 tags:
   - git
 ---
 
-git工作笔记是一种版本控制系统，它可以帮助开发人员管理代码，记录代码变更历史，提高团队协作效率。
+<img src="https://i.imgur.com/01VtCug.jpg" />
+
+git 是一种版本控制系统，它可以帮助开发人员管理代码，记录代码变更历史，提高团队协作效率。
 
 <!--more-->
 

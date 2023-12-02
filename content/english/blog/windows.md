@@ -6,6 +6,7 @@ categories:
   - 技术
 tags:
   - windows
+draft: true
 ---
 微软视窗是由微软公司开发和销售的几个专有图形操作系统系列组成的。
 

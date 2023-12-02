@@ -1,5 +1,5 @@
 ---
-title: docker 虚拟化技术
+title: docker 虚拟化容器技术
 date: 2023-10-30T05:00:00Z
 tags:
   - docker

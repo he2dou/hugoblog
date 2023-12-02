@@ -1,13 +1,15 @@
 ---
-title: redis 工作笔记
+title: redis 缓存数据存储
 date: 2022-04-04T05:00:00Z
-image: /images/image-placeholder.png
 author: hht
 categories:
   - 技术
 tags:
   - redis
 ---
+
+<img src="https://i.imgur.com/Sdjnacf.jpg" />
+
 Redis 是一种开源（BSD 许可）内存数据结构存储，可用作数据库、缓存和消息代理。
 
 <!--more-->

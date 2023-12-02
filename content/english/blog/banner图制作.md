@@ -4,8 +4,6 @@ date: 2023-12-01T05:00:00Z
 categories:
   - 工具
 author: harry
-tags:
-  - banner
 draft: false
 ---
 
@@ -16,6 +14,7 @@ Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam er
 <!--more-->
 
 ### 使用bing ai 服务
+Image Creator from Designer
 
 
 ### 创建自己的提示词

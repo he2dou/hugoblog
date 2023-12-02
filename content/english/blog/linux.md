@@ -141,3 +141,46 @@ scp -r Config root@192.168.28.25:/usr/local/tanex.com/match
 
 下载地址：
 
+
+
+### 帮我写一个读取txt文本每行并打印的shell脚本
+
+脚本名称：read_[text.sh](http://text.sh/)
+
+
+```sh
+#!/bin/bash
+
+# 检查参数
+if [ $# -ne 1 ]; then
+  echo "用法：$0 filename"
+  exit 1
+fi
+
+# 判断文件是否存在
+if [ ! -f $1 ]; then
+  echo "文件不存在！"
+  exit 1
+fi
+
+# 读取文件并打印每行内容
+while read line; do
+  echo "$line"
+done < $1
+```
+
+赋予权限
+
+
+
+```sh
+chmod +x read_text.sh
+```
+
+执行脚本
+
+
+
+```sh
+./read_text.sh filename
+```
