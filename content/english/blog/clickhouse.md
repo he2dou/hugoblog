@@ -1,5 +1,5 @@
 ---
-title: clickhouse 高效的列式数据库
+title: clickhouse 列式数据库
 date: 2023-04-04T05:00:00Z
 tags:
   - clickhouse

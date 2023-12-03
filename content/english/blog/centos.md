@@ -1,5 +1,5 @@
 ---
-title: centos 服务器系统
+title: centos 服务器操作系统
 date: 2022-04-04T05:00:00Z
 author: harry
 categories:

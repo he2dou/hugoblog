@@ -15,7 +15,7 @@ Docker Compose 是 docker 提供的一个命令行工具，用来定义和运行
 
 {{< toc >}}
 
-## 安装[​](https://docs.littleriver.cc/v1/references/docker-compose#%E5%AE%89%E8%A3%85)
+## 安装
 
 确保本机已经安装了docker，关于docker安装请参考链接：[https://www.cnblogs.com/xiao987334176/p/11771657.html](https://www.cnblogs.com/xiao987334176/p/11771657.html)
 

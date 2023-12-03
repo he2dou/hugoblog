@@ -1,8 +1,7 @@
 ---
 title: dbeaver 数据库管理工具
 date: 2023-10-31T05:00:00Z
-# image: /images/image-placeholder.png
-author: hht
+author: harry
 categories:
   - 工具
 tags:

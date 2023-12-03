@@ -30,7 +30,7 @@ version: "3.0"
 services:
     nginx:
         image: nginx:latest
-        container_name: nginx
+        container_name: nginx   
         environment:
             TZ: Asia/Shanghai
         volumes:
@@ -44,7 +44,7 @@ services:
         restart: always
         logging:
             options:
-                max-size: "10g"
+                max-size: "1g"
 ```
 
 ## [](https://littleriver.cc/nginx?source=more_articles_bottom_blogs#heading-ssl-httpsdocslittleriverccv1referencesnginxssl-e8af81e4b9a6 "Permalink")SSL 证书[​](https://docs.littleriver.cc/v1/references/nginx#ssl-%E8%AF%81%E4%B9%A6)

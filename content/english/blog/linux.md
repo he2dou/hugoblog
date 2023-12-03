@@ -1,5 +1,5 @@
 ---
-title: linux 工作笔记
+title: linux 开源操作系统
 date: 2022-04-04T05:00:00Z
 categories:
   - 技术
