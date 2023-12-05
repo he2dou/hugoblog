@@ -8,7 +8,7 @@ tags:
 author: harry
 ---
 
-<img src="https://i.imgur.com/4lY5ANB.jpg" title="source: imgur.com" />
+<img src="https://s2.loli.net/2023/12/01/EonOa8hIKHsqitF.jpg" title="source: imgur.com" />
 
 Linux遵循GNU通用公共许可证，个人和机构都可以使用Linux所有底层源代码，也可以自由地修改和再发布。
 

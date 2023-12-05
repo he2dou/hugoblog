@@ -8,7 +8,7 @@ tags:
   - redis
 ---
 
-<img src="https://i.imgur.com/Sdjnacf.jpg" />
+<img src="https://s2.loli.net/2023/12/05/dTH32Ze5XrKAES6.jpg" />
 
 Redis 是一种开源（BSD 许可）内存数据结构存储，可用作数据库、缓存和消息代理。
 
