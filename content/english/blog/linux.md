@@ -16,9 +16,9 @@ Linux遵循GNU通用公共许可证，个人和机构都可以使用Linux所有�
 
 {{< toc >}}
 
-# Vim
+## Vim
 
-## 查找单词并替换
+**查找单词并替换**
 
 ```shell
 :%s/old_word/new_word/g
@@ -26,7 +26,7 @@ Linux遵循GNU通用公共许可证，个人和机构都可以使用Linux所有�
 
 
 
-# Natstat
+## Natstat
 
 netstat命令的功能是显示网络连接、路由表和网络接口的信息，可以让用户得知有哪些网络连接正在运作。在日常工作中，我们最常用的也就两个参数，即netstat –an，如下所示：
 
@@ -54,7 +54,7 @@ netstat命令的功能是显示网络连接、路由表和网络接口的信息�
 **TIME-WAIT**：等待足够的时间以确保远程TCP连接收到中断请求的确认；  
 **CLOSED**：没有任何连接状态；
 
-## 在日常工作中用
+### 在日常工作中用
 
 我们可以用shell组合命令来查看服务器的TCP连接状态并汇总，命令如下：  
 
@@ -76,7 +76,7 @@ netstat -an |grep 'ESTABLISHED' |grep 'tcp' |wc -l
 **LAST_ACK**：等待所有分组死掉；  
 
 
-## 查看端口连接数
+### 查看端口连接数
 
 
 ```shell
@@ -84,7 +84,7 @@ netstat -nat|grep -i "80"|wc -l
 ```
 
 
-## 其它使用方法
+### 其它使用方法
 
 
 ```shell
@@ -117,7 +117,7 @@ netstat -an |grep 'ESTABLISHED' |grep 'tcp' |wc -l
 
 
 
-# SCP
+## SCP
 
 ```shell
 # 统计句柄数量 
@@ -135,15 +135,44 @@ scp -r Config root@192.168.28.25:/usr/local/tanex.com/match
 
 ```
 
-# 磁盘挂载
+## 磁盘挂载
 
 ** **文件脚本**
 
 下载地址：
 
 
+## 压缩解压
 
-### 帮我写一个读取txt文本每行并打印的shell脚本
+**压缩和解压文件**
+```sh
+[root@localhost tmp]# zip boduo.zip boduo
+
+[root@localhost tmp]# unzip boduo.zip
+```
+
+
+**压缩和解压目录**
+```sh
+[root@localhost tmp]# zip -r Demo.zip Demo
+  adding: Demo/ (stored 0%)
+  adding: Demo/Test2/ (stored 0%)
+  adding: Demo/Test1/ (stored 0%)
+  adding: Demo/Test1/test4 (stored 0%)
+  adding: Demo/test3 (stored 0%)
+
+
+[root@localhost tmp]# unzip Demo.zip 
+Archive:  Demo.zip
+   creating: Demo/
+   creating: Demo/Test2/
+   creating: Demo/Test1/
+ extracting: Demo/Test1/test4        
+ extracting: Demo/test3 
+```
+## 其它
+
+**帮我写一个读取txt文本每行并打印的shell脚本**
 
 脚本名称：read_[text.sh](http://text.sh/)
 

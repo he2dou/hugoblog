@@ -189,6 +189,8 @@
   },
   "active": "97e0d8f6af900a56",
   "lastOpenFiles": [
+    "logs.md",
+    "weblogs.md",
     "dolphinscheduler部署.md",
     "通义灵码的使用.md",
     "自由职业的思考.md",
@@ -212,8 +214,6 @@
     "好用软件推荐.md",
     "dbeaver 数据库管理.md",
     "obsidian 写作应用.md",
-    "nginx 工作笔记.md",
-    "docker 工作笔记.md",
-    "ubuntu 工作笔记.md"
+    "nginx 工作笔记.md"
   ]
 }

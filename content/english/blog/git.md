@@ -15,12 +15,23 @@ git 是一种版本控制系统，它可以帮助开发人员管理代码，记�
 
 {{< toc >}}
 
-通过git，开发人员可以轻松地跟踪代码变更、合并分支以及解决冲突，从而更好地维护代码质量。
 
-## 命令[​](https://docs.littleriver.cc/v1/references/git#%E5%91%BD%E4%BB%A4)
+## 安装
 
+- windows上安装
 
+> 使用官方地址进行下载, https://git-scm.com/downloads
+
+- centos上安装
+
+```sh
+yum install -y git
 ```
+
+## 操作
+
+
+```sh
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```

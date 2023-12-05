@@ -43,8 +43,8 @@ url = "categories/"
 
 [[main]]
 parent = "更多"
-name = "404 Page"
-url = "404/"
+name = "Release"
+url = "blog/logs"
 
 [[main]]
 parent = "更多"
