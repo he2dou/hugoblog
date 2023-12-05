@@ -43,7 +43,9 @@ services:
 
 ```
 
-然后运行`docker-compose up -d`
+然后运行 **docker-compose up -d** 拉取和启动容器服务
+
+---
 
 ## 使用
 
@@ -74,13 +76,16 @@ FLUSHALL
 keys *
 ```
 
+---
+
+## 其它
 
 ### python批量删除key
 
 ```python
 import redis
 
-r = redis.Redis(host='127.0.0.1', port=6379, password='123456', db=0)
+r = redis.Redis(host='127.0.0.1', port=6379, password='you_password', db=0)
 
 for key in r.scan_iter(match='cacheKey:*'):
     print(key)

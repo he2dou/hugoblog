@@ -15,21 +15,42 @@ MySQL数据库服务是一个完全托管的数据库服务，可使用世界上
 
 {{< toc >}}
 
-## 数据库安装
+## 安装
 docker-compose命令安装，脚本如下
 
+```yaml
 
+version: "3"
 
-**创建数据库**
-
+services:
+  mysql:
+    image: mysql
+    container_name: mysql
+    command:
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_ROOT_HOST: '%'
+      TZ: Asia/Shanghai
+    ports:
+      - 3306:3306
+    networks:
+      - adv-network
+    volumes:
+      - /home/docker/mysql/data:/var/lib/mysql
+      - /home/docker/mysql/conf:/etc/mysql/conf.d
+      - /home/docker/mysql/logs:/logs
+    logging:
+      options:
+        max-size: "1g"
 
 ```
-create database hbfmxt DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_general_ci;
 
-GRANT ALL PRIVILEGES ON hbfmxt.* TO 'ppl'@'%' IDENTIFIED BY 'ppl_123456!' WITH GRANT OPTION;
+然后运行 **docker-compose up -d** 拉取和启动容器服务
 
-flush privileges;
-```
 
 **任务**
 
@@ -57,51 +78,63 @@ flush privileges;
 
 **注意：记录每条数据的变化及上下文相关信息，在日志量和性能上有影响**
 
-**2.Mysql 操作**
+## 操作
 
-**创建**
+**一般操作命令**
+
+
+```sql
+create database hbfmxt DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_general_ci;
+
+GRANT ALL PRIVILEGES ON hbfmxt.* TO 'ppl'@'%' IDENTIFIED BY '123456!' WITH GRANT OPTION;
+
+flush privileges;
+```
 
 创建数据库
 
 
-```
+```sql
 CREATE DATABASE test DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 ```
 
 创建数据表
 
 
+```sql
+CREATE TABLE IF NOT EXISTS runoob_tbl( 
+  runoob_id INT UNSIGNED AUTO_INCREMENT, 
+  runoob_title VARCHAR(100) NOT NULL, 
+  runoob_author VARCHAR(40) NOT NULL, 
+  submission_date DATE, PRIMARY KEY ( runoob_id ) 
+  )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
-CREATE TABLE IF NOT EXISTS runoob_tbl( runoob_id INT UNSIGNED AUTO_INCREMENT, runoob_title VARCHAR(100) NOT NULL, runoob_author VARCHAR(40) NOT NULL, submission_date DATE, PRIMARY KEY ( runoob_id ) )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-```
 
-**查询**
-
-# 查看所有数据库
+查看所有数据库
 
 
-```
+```sql
 show databases;
 ```
 
-# 查看所有数据表
+查看所有数据表
 
 
-```
+```sql
 show tables;
 ```
 
-# 查询数据
+查询数据
 
 
-```
+```sql
 select * from runoob_tbl;
 ```
 
-**插入**
+**插入数据**
 
 
-```
+```sql
 INSERT INTO runoob_tbl (runoob_title, runoob_author, submission_date) 
 VALUES ("学习 MySQL", "菜鸟教程", NOW()); 
 
@@ -109,33 +142,29 @@ INSERT INTO runoob_tbl (runoob_title, runoob_author, submission_date)
 VALUES ("学习 ClickHouse", "菜鸟教程", NOW());
 ```
 
-**更新**
+**更新数据**
 
 
-```
+```sql
 update runoob_tbl set runoob_author='1' where runoob_id=1;
 ```
 
-**删除**
-
-# 库
+**删除数据库**
 
 
-```
+```sql
 DROP database test;
 ```
 
-# 表
+**删除数据表**
 
-
-
-```
+```sql
 DROP table runoob_tbl;
 ```
 
-# 行数据
+**删除行数据**
 
 
-```
+```sql
 delete from runoob_tbl where runoob_id=1;
 ```
