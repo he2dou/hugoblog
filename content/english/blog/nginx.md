@@ -18,11 +18,8 @@ Nginx 是一款轻量级的Web服务器、反向代理，内存占用少，启�
 
 ## 安装
 
-保存下面脚本 `docker-compose.yaml` ，然后运行 `docker-compose up -d`
+以下是**docker-compose.yaml**文件示例
 
-COPY
-
-COPY
 
 ```yaml
 version: "3.0"
@@ -47,17 +44,16 @@ services:
                 max-size: "1g"
 ```
 
-## [](https://littleriver.cc/nginx?source=more_articles_bottom_blogs#heading-ssl-httpsdocslittleriverccv1referencesnginxssl-e8af81e4b9a6 "Permalink")SSL 证书[​](https://docs.littleriver.cc/v1/references/nginx#ssl-%E8%AF%81%E4%B9%A6)
+然后运行 **docker-compose up -d** 拉取和启动容器服务
 
-### [](https://littleriver.cc/nginx?source=more_articles_bottom_blogs#heading-httpsdocslittleriverccv1referencesnginxe794b3e8afb7e8af81e4b9a6 "Permalink")申请证书[​](https://docs.littleriver.cc/v1/references/nginx#%E7%94%B3%E8%AF%B7%E8%AF%81%E4%B9%A6)
+---
 
-### [](https://littleriver.cc/nginx?source=more_articles_bottom_blogs#heading-httpsdocslittleriverccv1referencesnginxe8af81e4b9a6e9858de7bdae "Permalink")证书配置[​](https://docs.littleriver.cc/v1/references/nginx#%E8%AF%81%E4%B9%A6%E9%85%8D%E7%BD%AE)
+## 使用
+
+**ssl证书配置**
 
 在nginx.conf文件添加如下内容
 
-COPY
-
-COPY
 
 ```shell
 server {
@@ -105,19 +101,15 @@ server {
     }
     #proxy_set_header X-Real-IP  $remote_addr;
     #proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_pass http://172.16.107.255:8005;
+    proxy_pass http://ip:port;
   }
 
 }
 ```
 
-## [](https://littleriver.cc/nginx?source=more_articles_bottom_blogs#heading-httpsdocslittleriverccv1referencesnginxe8b7a8e59f9fe694afe68c81 "Permalink")跨域支持[​](https://docs.littleriver.cc/v1/references/nginx#%E8%B7%A8%E5%9F%9F%E6%94%AF%E6%8C%81)
+**跨域支持**
 
 在nginx.conf文件添加如下内容
-
-COPY
-
-COPY
 
 ```shell
     add_header Access-Control-Allow-Origin *;
@@ -125,14 +117,55 @@ COPY
     add_header Access-Control-Allow-Headers 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization';
 ```
 
-## [](https://littleriver.cc/nginx?source=more_articles_bottom_blogs#heading-iphttpsdocslittleriverccv1referencesnginxe4bba3e79086e79c9fe5ae9eip "Permalink")代理真实IP[​](https://docs.littleriver.cc/v1/references/nginx#%E4%BB%A3%E7%90%86%E7%9C%9F%E5%AE%9Eip)
+**代理端口服务**
 
 在nginx.conf文件添加如下内容
 
 
-```
+```shell
+location /api {
     proxy_set_header X-Real-IP  $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header X-Forwarded-Proto $scheme;
     proxy_set_header Host $http_host;
+
+    add_header Access-Control-Allow-Origin *;
+    add_header Access-Control-Allow-Methods 'GET,POST,OPTIONS,DELETE,PUT';
+    add_header Access-Control-Allow-Headers 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization';
+
+    if ($request_method = 'OPTIONS') {
+        return 204;
+    }
+    proxy_pass http://ip:port;
+  }
+```
+
+
+**websocket 配置**
+```sh
+
+location /ws {
+     proxy_pass http://ip:port;
+     proxy_http_version 1.1;
+     proxy_set_header Upgrade $http_upgrade;
+     proxy_set_header Connection "upgrade";
+  }
+
+```
+
+---
+
+## 其它
+
+容器nginx配置重新加载
+
+```shell
+docker exec -it babc5ab66db7 nginx -s reload
+```
+
+测试nginx配置文件是否ok
+
+```shell
+docker exec -it babc5ab66db7 nginx -t
+
 ```

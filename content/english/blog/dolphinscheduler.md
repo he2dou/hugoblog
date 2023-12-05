@@ -16,8 +16,10 @@ Dolphinscheduler 是一种开源的、分布式的、易于使用的大数据工
 
 ## 下载安装环境
 
+环境配置：
+
 - 服务器系统版本：CentOS Linux release 7.9.2009 (Core)
-- dolphinscheduler：3.1.4
+- dolphinscheduler软件版本：3.1.4
 
 ### 1.安装 jdk-20_linux-x64_bin
 
