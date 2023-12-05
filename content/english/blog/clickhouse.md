@@ -15,8 +15,7 @@ ClickHouse 是用于实时应用程序和分析的速度最快、资源效率最
 <!--more-->
 
 {{< toc >}}
-# **第一节 环境安装**
-环境安装
+## **第一节 环境安装**
 
 CentOS系统环境
 
@@ -31,10 +30,10 @@ clickhouse-client # or "clickhouse-client --password" if you set up a password.
 ```
 
 
-# 第二节 软件配置
+## 第二节 软件配置
 
 
-# 第三节 使用方法
+## 第三节 使用方法
 
 使用客户端工具连接server
 
@@ -71,10 +70,15 @@ CREATE TABLE test.tb1 ENGINE = ReplacingMergeTree ORDER BY id AS SELECT * FROM m
 ```
 
 
-# **第四节 数据同步**
+## **第四节 数据同步**
 
+**保证原子性重命名表名**
 
-# 第五节 定位问题
+```sh
+EXCHANGE TABLES old_table AND new_table;
+```
+
+## 第五节 定位问题
 
 
 ```sql
@@ -84,6 +88,13 @@ select query from system.query_log where event_time>'2023-04-28 10:00:00' and ev
 
 ```sql
 SELECT partition, name, rows, active FROM system.parts WHERE table = 'mb_material' AND database = 'mapbridge_ck';
+```
+### 复制表数据
+
+先创建table1表结构，然后执行下面语句
+
+```sql
+insert into database.table1  SELECT * FROM  remote('xxx.com:9000', 'database', table2, 'user', 'password')
 ```
 
 ### 批量执行clickhouse数据同步
@@ -114,7 +125,7 @@ while read table; do
 done < $1
 ```
 
-赋予权限
+**赋予权限**
 
 
 
