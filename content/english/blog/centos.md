@@ -6,7 +6,7 @@ categories:
   - 技术
 ---
 
-<img src="https://s2.loli.net/2023/12/05/JKnoqPLdY8gNe2A.jpg" />
+<img src="https://pic.imgdb.cn/item/656f2ad9c458853aef709008.jpg" />
 
 CentOS是Linux发行版之一，它是来自于Red Hat Enterprise Linux依照开放源代码规定发布所编译而成。
 

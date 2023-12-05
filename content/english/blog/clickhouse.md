@@ -8,7 +8,7 @@ categories:
   - 技术
 ---
 
-<img src="https://s2.loli.net/2023/12/05/XdiO9ZzoLyI46s1.jpg" />
+<img src="https://pic.imgdb.cn/item/656f2a4ec458853aef6d96ee.jpg" />
 
 ClickHouse 是用于实时应用程序和分析的速度最快、资源效率最高的开源数据库。
 

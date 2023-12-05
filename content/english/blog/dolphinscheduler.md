@@ -6,7 +6,7 @@ categories:
 author: harry
 ---
 
-<img src="https://s2.loli.net/2023/12/01/7mV6PO3y1DwEfxs.jpg" />
+<img src="https://pic.imgdb.cn/item/656f2c2ac458853aef77d865.jpg" />
 
 Dolphinscheduler 是一种开源的、分布式的、易于使用的大数据工作流调度系统。
 

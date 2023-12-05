@@ -7,7 +7,7 @@ tags:
   - git
 ---
 
-<img src="https://s2.loli.net/2023/12/05/W5YelyP1iTjqczU.jpg" />
+<img src="https://pic.imgdb.cn/item/656f2ad9c458853aef709171.jpg" />
 
 git 是一种版本控制系统，它可以帮助开发人员管理代码，记录代码变更历史，提高团队协作效率。
 

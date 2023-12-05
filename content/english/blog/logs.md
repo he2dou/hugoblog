@@ -8,7 +8,7 @@ tags:
 author: harry
 ---
 
-<img src="https://s2.loli.net/2023/12/05/Z8AmdwNJn2i3WIh.jpg" alt="网站更新日志">
+<img src="https://pic.imgdb.cn/item/656f2c13c458853aef774f50.jpg" alt="网站更新日志">
 
 以前的很多图床大多都GG了，还有一些个人搭建图床建议不要用。
 

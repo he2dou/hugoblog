@@ -8,7 +8,7 @@ tags:
 author: harry
 ---
 
-<img src="https://s2.loli.net/2023/12/01/kDLaHTQwjbJ35g6.jpg" alt="免费图床网站">
+<img src="https://pic.imgdb.cn/item/656f2ca9c458853aef7aa713.jpg" alt="免费图床网站">
 
 Linux Screen是一个全屏窗口管理器，它可以创建多个窗口，并在其间进行切换。
 

@@ -9,7 +9,7 @@ tags:
 draft: false
 ---
 
-<img src="https://s2.loli.net/2023/12/01/pBEa9XZKRNUbT18.jpg" />
+<img src="https://pic.imgdb.cn/item/656f2e7cc458853aef848bba.jpg" />
 
 DBeaver  是一款免费的跨平台数据库工具，适用于开发人员、数据库管理员、以及所有从事数据工作的人员。
 

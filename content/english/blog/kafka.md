@@ -9,7 +9,7 @@ tags:
 draft: false
 ---
 
-<img src="https://s2.loli.net/2023/12/05/Wceg6lxkIhr5E4A.jpg" />
+<img src="https://pic.imgdb.cn/item/656f2ad9c458853aef7090e2.jpg" />
 
 Kafka 是一个开源的分布式事件流平台，被数千家公司用于高性能数据管道、流分析、数据集成和关键任务应用。
 

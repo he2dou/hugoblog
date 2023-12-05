@@ -8,7 +8,7 @@ categories:
 author: harry
 ---
 
-<img src="https://s2.loli.net/2023/12/05/z7I3f8TZlyAqLsP.jpg" />
+<img src="https://pic.imgdb.cn/item/656f2ad9c458853aef708f4b.jpg" />
 
 Nginx 是一款轻量级的Web服务器、反向代理，内存占用少，启动快，高并发能力强，在互联网项目中广泛应用。
 

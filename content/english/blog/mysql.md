@@ -7,7 +7,7 @@ tags:
   - mysql
 ---
 
-<img src="https://s2.loli.net/2023/12/05/wKkFWabG3oMqLXt.jpg" />
+<img src="https://pic.imgdb.cn/item/656f2c0ec458853aef772f5d.jpg" />
 
 MySQL数据库服务是一个完全托管的数据库服务，可使用世界上最受欢迎的开源数据库来部署云原生应用程序。
 

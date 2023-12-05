@@ -7,7 +7,7 @@ tags:
   - docker
 ---
 
-<img src="https://s2.loli.net/2023/12/01/HxACNn397VSvFoT.jpg" title="source: imgur.com" />
+<img src="https://pic.imgdb.cn/item/656f2c2ec458853aef77ecd0.jpg" title="source: imgur.com" />
 
 Docker Compose 是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。
 
