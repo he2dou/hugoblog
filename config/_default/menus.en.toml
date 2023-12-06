@@ -12,8 +12,8 @@ url = "blog/"
 weight = 2
 
 [[main]]
-name = "项目"
-url = "project/"
+name = "商店"
+url = "store/"
 weight = 3
 
 [[main]]

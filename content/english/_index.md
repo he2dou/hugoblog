@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Get Started"
-    link: "/project"
+    link: "/blog"
 
 # Features
 features:

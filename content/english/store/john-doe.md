@@ -1,5 +1,5 @@
 ---
-title: John Doe
+title: 二手闲置
 email: johndoe@email.com
 image: "/images/avatar.png"
 description: this is meta description
