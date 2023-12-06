@@ -12,7 +12,7 @@ url = "blog/"
 weight = 2
 
 [[main]]
-name = "商店"
+name = "好物"
 url = "store/"
 weight = 3
 
