@@ -1,7 +1,7 @@
 ---
 title: redis 缓存数据技术
 date: 2023-12-05
-author: hht
+author: harry
 categories:
   - 技术
 tags:

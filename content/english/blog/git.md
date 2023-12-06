@@ -5,6 +5,7 @@ categories:
   - 技术
 tags:
   - git
+author: harry 
 ---
 
 <img src="https://pic.imgdb.cn/item/656f2ad9c458853aef709171.jpg" />
