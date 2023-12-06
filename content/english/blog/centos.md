@@ -100,17 +100,27 @@ grub2-set-default 0
 reboot
 ```
 
-## 8、查看内核版本
+## 8、查看版本
 
-
-
+**内核版本**
 ```shell
 uname -r
 ```
 
 `3.18.3-1.el7.elrepo.x86_64 1. 2.` 完成后内核已经是最新的了。
 
+**系统版本**
+```shell
+cat /etc/redhat-release
+```
+
+CentOS Linux release 7.9.2009 (Core)
+
 
 ## 基础软件安装
+```sh
+yum update -y
+yum install epel-release -y
+yum install htop wget lrzsz python-pip -y
 
-yum install -y lrzsz
+```
