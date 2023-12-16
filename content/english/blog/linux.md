@@ -135,6 +135,8 @@ scp -r Config root@192.168.28.25:/usr/local/tanex.com/match
 
 ```
 
+scp -r 预发布环境5.zip root@172.16.108.2:/home/docker/nginx/www
+
 ## 磁盘挂载
 
 ** **文件脚本**
