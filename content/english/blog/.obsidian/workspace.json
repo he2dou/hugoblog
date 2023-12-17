@@ -4,63 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "263aadcefaac1f3a",
+        "id": "e61de828ee5cccfe",
         "type": "tabs",
         "children": [
           {
-            "id": "08cb06441936eb47",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "bdb57b27fb217d45",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "c39a2e7366bd023f",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "70e4d482572eb6b5",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "e1b7d4f1528878b1",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "97e0d8f6af900a56",
+            "id": "344cb22b1c1d46eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "系统架构设计.md",
+                "file": "2023年.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "系统架构设计.md",
+                "file": "2023年.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "系统架构设计.md",
+                "file": "2023年.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "系统架构设计.md"
+                "file": "2023年.md"
               }
             }
           }
@@ -187,33 +146,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97e0d8f6af900a56",
+  "active": "344cb22b1c1d46eb",
   "lastOpenFiles": [
+    "2024年.md",
+    "2023年.md",
+    "2023年 copy.md",
+    "自由职业的思考.md",
+    "python.md",
+    "免费的图床网站.md",
+    "通义灵码的使用.md",
+    "系统架构设计.md",
+    "小孩的教育思考.md",
     "docker-compose.md",
     "logs.md",
     "weblogs.md",
     "dolphinscheduler部署.md",
-    "通义灵码的使用.md",
-    "自由职业的思考.md",
     "网站的开发日志.md",
-    "小孩的教育思考.md",
-    "免费的图床网站.md",
     "dolphinscheduler.md",
     "免费图床网站.md",
     "通义灵码使用.md",
     "网站更新日志.md",
-    "系统架构设计.md",
     "广告营销行业.md",
     "小孩教育问题.md",
     "2022年.md",
-    "2023年.md",
     "2021年.md",
     "clickhouse 工作笔记.md",
     "centos 工作笔记.md",
     "linux 工作笔记.md",
-    "好用软件推荐.md",
-    "dbeaver 数据库管理.md",
-    "obsidian 写作应用.md",
-    "nginx 工作笔记.md"
+    "好用软件推荐.md"
   ]
 }
