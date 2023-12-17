@@ -11,15 +11,15 @@ name = "博客"
 url = "blog/"
 weight = 2
 
-[[main]]
-name = "好物"
-url = "store/"
-weight = 3
+# [[main]]
+# name = "好物"
+# url = "store/"
+# weight = 3
 
-[[main]]
-name = "视频"
-url = "video/"
-weight = 4
+# [[main]]
+# name = "视频"
+# url = "video/"
+# weight = 4
 
 [[main]]
 name = "关于"
@@ -31,25 +31,25 @@ weight = 6
 name = "更多"
 hasChildren = true
 
-[[main]]
-parent = "更多"
-name = "Contact"
-url = "contact/"
+# [[main]]
+# parent = "更多"
+# name = "联系"
+# url = "contact/"
 
 [[main]]
 parent = "更多"
-name = "Categories"
+name = "文章分类"
 url = "categories/"
 
 [[main]]
 parent = "更多"
-name = "Release"
+name = "更新日志"
 url = "blog/logs"
 
-[[main]]
-parent = "更多"
-name = "Policy"
-url = "privacy-policy/"
+# [[main]]
+# parent = "更多"
+# name = "Policy"
+# url = "privacy-policy/"
 
 # footer menu
 [[footer]]
