@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023年.md",
+                "file": "windows.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1d1e63b38a401be0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "小孩的教育思考.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023年.md",
+                "file": "小孩的教育思考.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023年.md",
+                "file": "小孩的教育思考.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023年.md"
+                "file": "小孩的教育思考.md"
               }
             }
           }
@@ -146,10 +159,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "344cb22b1c1d46eb",
+  "active": "1d1e63b38a401be0",
   "lastOpenFiles": [
-    "2024年.md",
+    "typora.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "linux.md",
+    "git.md",
     "2023年.md",
+    "2024年.md",
     "2023年 copy.md",
     "自由职业的思考.md",
     "python.md",
@@ -168,11 +186,6 @@
     "网站更新日志.md",
     "广告营销行业.md",
     "小孩教育问题.md",
-    "2022年.md",
-    "2021年.md",
-    "clickhouse 工作笔记.md",
-    "centos 工作笔记.md",
-    "linux 工作笔记.md",
-    "好用软件推荐.md"
+    "2022年.md"
   ]
 }
