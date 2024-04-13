@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "/"
+baseURL = "https://39p0508r91.qicp.vip"
 # Title of your website (required).
 title = "LittleRiver"
 # Your theme name
