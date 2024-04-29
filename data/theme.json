@@ -3,9 +3,9 @@
     "default": {
       "theme_color": {
         "primary": "#121212",
-        "body": "#F1F7F8",
+        "body": "#fff",
         "border": "#eaeaea",
-        "theme_light": "#fff",
+        "theme_light": "#f6f6f6",
         "theme_dark": ""
       },
       "text_color": {
@@ -38,7 +38,7 @@
     },
     "font_size": {
       "base": "16",
-      "scale": "1.250"
+      "scale": "1.2"
     }
   }
 }

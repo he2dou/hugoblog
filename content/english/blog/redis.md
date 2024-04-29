@@ -3,12 +3,12 @@ title: redis 缓存数据技术
 date: 2023-12-05
 author: harry
 categories:
-  - 技术
+  - Technology
 tags:
   - redis
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2c19c458853aef7773c0.jpg" />
 
 Redis 是一种开源（BSD 许可）内存数据结构存储，可用作数据库、缓存和消息代理。
 

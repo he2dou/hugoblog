@@ -1,28 +1,29 @@
 ---
 enable: true
-title: "代码之美。"
-description: "相较于文档或注释，代码是最真实、最可靠的信息来源。保持代码清晰和自描述性。"
+title: "What Users Are Saying About Hugoplate"
+description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Hugoplate."
 
 # Testimonials
 testimonials:
-  - name: "小孩的教育思考"
-    designation: "2023-04-04"
+  - name: "Marvin McKinney"
+    designation: "Web Designer"
     avatar: "/images/avatar-sm.png"
-    content: "在小孩的教育问题上，培养学习兴趣、训练学习方法、树立学习目标是非常重要的。"
-    link: "/blog/小孩的教育思考/"
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
 
-  - name: "系统架构设计"
-    designation: "2023-05-04"
+  - name: "Marvin McKinney"
+    designation: "Web Designer"
     avatar: "/images/avatar-sm.png"
-    content: "开发一个强大、可扩展和高效的系统, 了解关键概念和组件可以使该过程更易于管理。"
-    link: "/blog/系统架构设计/"
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
 
-  - name: "自由职业的思考"
-    designation: "2023-11-04"
+  - name: "Marvin McKinney"
+    designation: "Web Designer"
     avatar: "/images/avatar-sm.png"
-    content: "自由职业是指个体选择不依赖于传统雇佣关系，而是通过提供独立服务、项目或产品来获取收入。"
-    link: "/blog/自由职业的思考/"
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
 
+  - name: "Marvin McKinney"
+    designation: "Web Designer"
+    avatar: "/images/avatar-sm.png"
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
 
 # don't create a separate page
 _build:

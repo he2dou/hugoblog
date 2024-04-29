@@ -3,13 +3,13 @@ title: dbeaver 数据库管理工具
 date: 2023-10-31T05:00:00Z
 author: harry
 categories:
-  - 工具
+  - Software
 tags:
   - dbeaver
 draft: false
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2e7cc458853aef848bba.jpg" />
 
 DBeaver  是一款免费的跨平台数据库工具，适用于开发人员、数据库管理员、以及所有从事数据工作的人员。
 

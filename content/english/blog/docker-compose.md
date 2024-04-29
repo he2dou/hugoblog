@@ -2,13 +2,13 @@
 title: docker-compose 定义和运行容器
 date: 2022-04-04T05:00:00Z
 categories:
-  - 技术
+  - Technology
 tags:
   - docker
-author: harry 
+author: harry
+image: /images/image-placeholder.png 
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2c2ec458853aef77ecd0.jpg" title="source: imgur.com" />
 
 Docker Compose 是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。
 

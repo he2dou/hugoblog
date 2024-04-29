@@ -2,11 +2,11 @@
 title: 免费的图床网站
 date: 2023-11-30T05:00:00Z
 categories:
-  - 工具
+  - Software
 author: harry
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2caac458853aef7aa906.jpg" />
 
 以前的很多图床大多都GG了，还有一些个人搭建图床建议不要用。
 

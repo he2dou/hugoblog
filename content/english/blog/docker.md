@@ -4,11 +4,11 @@ date: 2023-10-30T05:00:00Z
 tags:
   - docker
 categories:
-  - 技术
+  - Technology
 author: harry
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2ca9c458853aef7aa66b.jpg" alt="免费图床网站">
 
 [Docker](https://www.docker.com/) 使开发变得高效和可预测，减少重复的配置任务，并在整个开发中用于快速、简单的应用开发。
 

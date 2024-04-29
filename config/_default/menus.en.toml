@@ -2,54 +2,50 @@
 
 # main menu
 [[main]]
-name = "首页"
-url = "/"
+name = "Home"
+pageRef = "/"
 weight = 1
 
 [[main]]
-name = "博客"
-url = "blog/"
+name = "Blog"
+pageRef = "/blog"
 weight = 2
 
-# [[main]]
-# name = "好物"
-# url = "store/"
-# weight = 3
-
-# [[main]]
-# name = "视频"
-# url = "video/"
-# weight = 4
+[[main]]
+name = "Elements"
+pageRef = "/elements"
+weight = 3
 
 [[main]]
-name = "关于"
-url = "about/"
+weight = 4
+name = "Pages"
+
+[[main]]
+name = "About"
+pageRef = "/about"
 weight = 5
 
-[[main]]
-weight = 6
-name = "更多"
-hasChildren = true
-
-# [[main]]
-# parent = "更多"
-# name = "联系"
-# url = "contact/"
 
 [[main]]
-parent = "更多"
-name = "文章分类"
-url = "categories/"
+parent = "Pages"
+name = "Contact"
+pageRef = "/contact"
 
 [[main]]
-parent = "更多"
-name = "更新日志"
-url = "blog/logs"
+parent = "Pages"
+name = "Authors"
+pageRef = "/authors"
 
-# [[main]]
-# parent = "更多"
-# name = "Policy"
-# url = "privacy-policy/"
+[[main]]
+parent = "Pages"
+name = "Categories"
+pageRef = "/categories"
+
+[[main]]
+parent = "Pages"
+name = "404 Page"
+pageRef = "/404"
+
 
 # footer menu
 [[footer]]

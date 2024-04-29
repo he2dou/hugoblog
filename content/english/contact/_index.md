@@ -1,9 +1,6 @@
 ---
-title: "联系"
-# meta title
+title: "Contact"
 meta_title: ""
-# meta description
-description: "This is meta description"
-# save as draft
+description: "this is meta description"
 draft: false
 ---

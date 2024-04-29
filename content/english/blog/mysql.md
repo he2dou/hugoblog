@@ -2,13 +2,13 @@
 title: mysql 数据库服务
 date: 2022-04-04T05:00:00Z
 categories:
-  - 技术
+  - Technology
 tags:
   - mysql
 author: harry
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2c0ec458853aef772f5d.jpg" />
 
 MySQL数据库服务是一个完全托管的数据库服务，可使用世界上最受欢迎的开源数据库来部署云原生应用程序。
 

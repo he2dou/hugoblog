@@ -1,7 +1,7 @@
 #################### default parameters ################################
-# favicon
+# favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
 favicon = "images/favicon.png"
-# logo
+# logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
 logo = "images/logo.png"
 logo_darkmode = "images/logo-darkmode.png"
 # use `px` or `x` with logo_width, example: "100px".
@@ -11,12 +11,12 @@ logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "LittleRiver"
+logo_text = "Hugoplate"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
 theme_switcher = true
-theme_default = "light" # available options [light/dark/system]
+theme_default = "system" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action
@@ -27,7 +27,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "Designed & Developed by [Little River](https://littleriver.cc)"
+copyright = "Designed & Developed by [Zeon Studio](https://zeon.studio)"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -37,8 +37,8 @@ preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button
 [navigation_button]
-enable = false
-label = "登录"
+enable = true
+label = "get a quote"
 link = "contact"
 
 # search
@@ -47,11 +47,17 @@ link = "contact"
 enable = true
 primary_color = "#121212"
 include_sections = ["blog"]
-show_image = false
+show_image = true
 show_description = true
 show_tags = true
 show_categories = true
 
+# announcement
+# announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
+[announcement]
+enable = true
+expire_days = 7
+content = "You must replace the **baseURL** in **hugo.toml** file when deploying, you can manage this announcement from the **params.toml** file."
 
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
@@ -95,7 +101,7 @@ map_marker = "images/marker.png"
 
 # Subscription
 [subscription]
-enable = true
+enable = false
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"

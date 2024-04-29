@@ -2,13 +2,13 @@
 title: 网站的开发日志
 date: 2023-11-30T05:00:00Z
 categories:
-  - 工具
+  - Software
 tags:
   - tool
 author: harry
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2c13c458853aef774f50.jpg" alt="网站更新日志">
 
 一篇详细记录了一个网站项目迭代更新的全过程。展示了项目的发展历程，提供给读者相关的开发经验。
 

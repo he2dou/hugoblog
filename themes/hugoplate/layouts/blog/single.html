@@ -1,11 +1,11 @@
 {{ define "main" }}
-  <section class="section pt-8">
+  <section class="section pt-7">
     <div class="container">
-      <div class="row gx-5">
-        <article class="{{ if gt (len .TableOfContents) 80 }}lg:col-8{{ else }}lg:col-10{{ end }}">
+      <div class="row justify-center">
+        <article class="lg:col-10">
           {{ $image:= .Params.image }}
           {{ if $image }}
-            <div class="mb-6">
+            <div class="mb-10">
               {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
             </div>
           {{ end }}
@@ -20,19 +20,21 @@
                 >{{ .Params.author }}
               </a>
             </li>
-            <li class="mr-4 inline-block">
-              <i class="fa-regular fa-folder mr-2"></i>
-              {{ $categories:= .Params.categories }}
-              {{ range $i,$p:= $categories }}
-                <a
-                  href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-                  class="ms-1"
-                  >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-                    {{ ", " }}
-                  {{ end }}
-                </a>
-              {{ end }}
-            </li>
+            {{ $categories:= .Params.categories }}
+            {{ if $categories }}
+              <li class="mr-4 inline-block">
+                <i class="fa-regular fa-folder mr-2"></i>
+                {{ range $i,$p:= $categories }}
+                  <a
+                    href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+                    class=""
+                    >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+                      {{ "," }}
+                    {{ end }}
+                  </a>
+                {{ end }}
+              </li>
+            {{ end }}
             <li class="mr-4 inline-block">
               <i class="fa-regular fa-clock mr-2"></i>
               {{ time.Format ":date_long" .PublishDate }}
@@ -42,46 +44,34 @@
             {{ .Content }}
           </div>
           <div class="row items-start justify-between">
-            <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-              <h5 class="mr-3">{{ i18n "tags" }} :</h5>
-              <ul>
-                {{ $tags:= .Params.tags }}
-                {{ range $i,$p:= $tags }}
-                  <li class="inline-block">
-                    <a
-                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
-                      href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
-                      {{ . | humanize }}
-                    </a>
-                  </li>
-                {{ end }}
-              </ul>
-            </div>
+            {{ $tags:= .Params.tags }}
+            {{ if $tags }}
+              <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+                <h5 class="mr-3">{{ i18n "tags" }} :</h5>
+                <ul>
+                  {{ range $i,$p:= $tags }}
+                    <li class="inline-block">
+                      <a
+                        class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                        href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
+                        {{ . | humanize }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
             <div class="lg:col-4 flex items-center">
-              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}
+              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false) }}
             </div>
           </div>
           <!-- comments -->
-          {{ if site.DisqusShortname }}
+          {{ if site.Config.Services.Disqus.Shortname }}
             <div class="mt-20">
               {{ template "_internal/disqus.html" . }}
             </div>
           {{ end }}
         </article>
-{{ if gt (len .TableOfContents) 80 }}
-        <!-- Use responsive class to hide on medium and smaller screens -->
-        <div class="toc lg:col-4 md:hidden lg:block">
-      
-          <div class="px-3 pt-5 pb-5 bg-theme-light dark:bg-darkmode-theme-light rounded">
-            <div class="pb-3">
-              <strong class="text-xl">Table of Contents</strong>
-            </div>
-            <aside class="tableOfContentContainer" id="tableOfContentContainer">
-              {{ .TableOfContents }}
-            </aside>
-          </div>
-        </div>
-      {{ end }}
       </div>
 
       <!-- Related posts -->
@@ -92,7 +82,7 @@
           <h2 class="h3 mb-12">{{ i18n "related_posts" }}</h2>
           <div class="row">
             {{ range . }}
-              <div class="lg:col-4">
+              <div class="lg:col-4 md:col-6 mb-14">
                 {{ partial "components/blog-card" . }}
               </div>
             {{ end }}

@@ -2,14 +2,14 @@
 title: kafka 消息队列服务
 date: 2022-04-04T05:00:00Z
 categories:
-  - 技术
+  - Technology
 author: harry
 tags:
   - kafka
 draft: false
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2ad9c458853aef7090e2.jpg" />
 
 Kafka 是一个开源的分布式事件流平台，被数千家公司用于高性能数据管道、流分析、数据集成和关键任务应用。
 

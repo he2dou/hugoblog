@@ -2,13 +2,13 @@
 title: linux 开源操作系统
 date: 2022-04-04T05:00:00Z
 categories:
-  - 技术
+  - Technology
 tags:
   - linux
 author: harry
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2c30c458853aef77fb41.jpg" title="source: imgur.com" />
 
 Linux遵循GNU通用公共许可证，个人和机构都可以使用Linux所有底层源代码，也可以自由地修改和再发布。
 

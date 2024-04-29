@@ -4,11 +4,11 @@ date: 2023-04-04T05:00:00Z
 tags:
   - nginx
 categories:
-  - 技术
+  - Technology
 author: harry
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2ad9c458853aef708f4b.jpg" />
 
 Nginx 是一款轻量级的Web服务器、反向代理，内存占用少，启动快，高并发能力强，在互联网项目中广泛应用。
 

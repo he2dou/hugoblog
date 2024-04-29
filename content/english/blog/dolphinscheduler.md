@@ -2,12 +2,12 @@
 title: Dolphinscheduler 工作流调度
 date: 2023-12-02T05:00:00Z
 categories:
-  - 工具
+  - Software
 author: harry
 draft: true
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2c2ac458853aef77d865.jpg" />
 
 Dolphinscheduler 是一种开源的、分布式的、易于使用的大数据工作流调度系统。
 

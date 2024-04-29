@@ -3,10 +3,11 @@ title: windows 使用笔记
 date: 2022-04-04T05:00:00Z
 image: /images/image-placeholder.png
 categories:
-  - 技术
+  - Technology
 tags:
   - windows
 draft: true
+image: /images/image-placeholder.png
 ---
 微软视窗是由微软公司开发和销售的几个专有图形操作系统系列组成的。
 

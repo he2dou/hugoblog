@@ -2,13 +2,13 @@
 title: git 版本控制系统
 date: 2022-04-04T05:00:00Z
 categories:
-  - 技术
+  - Technology
 tags:
   - git
 author: harry 
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2ad9c458853aef709171.jpg" />
 
 git 是一种版本控制系统，它可以帮助开发人员管理代码，记录代码变更历史，提高团队协作效率。
 

@@ -5,10 +5,10 @@ tags:
   - clickhouse
 author: harry
 categories:
-  - 技术
+  - Technology
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2a4ec458853aef6d96ee.jpg" />
 
 ClickHouse 是用于实时应用程序和分析的速度最快、资源效率最高的开源数据库。
 

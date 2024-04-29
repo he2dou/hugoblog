@@ -3,10 +3,10 @@ title: centos 服务器操作系统
 date: 2022-04-04T05:00:00Z
 author: harry
 categories:
-  - 技术
+  - Technology
+image: /images/image-placeholder.png
 ---
 
-<img src="https://pic.imgdb.cn/item/656f2ad9c458853aef709008.jpg" />
 
 CentOS是Linux发行版之一，它是来自于Red Hat Enterprise Linux依照开放源代码规定发布所编译而成。
 
